@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+        <html>
+            <body>
+
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+            <script>
+                let canvas = document.getElementById("gameCanvas");
+                let ctx = canvas.getContext("2d");
+                let colors = ["red", "blue"];
+                let color_tracker = 0;
+
+                let keys = {};  // Track multiple key presses
+                let space_pressed = false;  // Track space key press
+
+                // Listen for keydown and keyup to track pressed keys
+                document.addEventListener("keydown", (event) => {
+                    keys[event.key] = true;
+                });
+
+                document.addEventListener("keyup", (event) => {
+                    keys[event.key] = false;
+
+                    //reset space_pressed when space is released
+                    if (event.key === " ") {
+                        space_pressed = true;
+                    }
+                });
+
+                // Function to update player position
+                function update() {
+                    if (keys["ArrowLeft"]) {
+                        color_tracker = (color_tracker + 1) % colors.length;  // Cycle forward
+                        keys["ArrowLeft"] = false;  // Prevent repeated rapid cycling
+                    }
+                    if (keys["ArrowRight"]) {
+                        color_tracker = (color_tracker - 1 + colors.length) % colors.length;  // Cycle backward
+                        keys["ArrowRight"] = false;  // Prevent repeated rapid cycling
+                    }
+                    if (keys[" "] && space_pressed) {
+                        sendColorToServer(colors[color_tracker]);  // Send color to server
+                        space_pressed = false;  // Prevent repeated sending
+                    }
+
+                    Background();
+                    requestAnimationFrame(update);  // Continuously loop the game
+                }
+
+                // Function to draw player
+                function Background() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);  // Clear canvas
+                    ctx.fillStyle = colors[color_tracker];
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                }
+
+                // Function to send color to server
+                function sendColorToServer(color) {
+                    fetch("/log_color", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({ color: color })
+                    })
+                    .then(res => res.json())
+                    .then(data => console.log("Server response:", data))
+                    .catch(err => console.error("Fetch error:", err));
+                }
+
+                // Start game loop
+                update();
+            </script>
+
+            </body>
+        </html>
