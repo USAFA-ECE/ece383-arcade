@@ -1,4 +1,4 @@
-title, bitstream file name, picture file name, description
-NES Mario, C25Dutt_FinalProject_Mario.bit, C25Dutt_mario.png
-Breakout, C25SamCook_Breakout_Updated_IO.bit, C25SamCook_breakout.jpg
-C26PaytonNunn_FlappyBird.bit, C26PaytonNunn_Flappy.jpg, C26PaytonNunn_Flappy.jpg
+Title,Bitstream File Name,Picture File Name,Description
+NES Mario,C25Dutt_FinalProject_Mario.bit,C25Dutt_mario.png
+Breakout,C25SamCook_Breakout_Updated_IO.bit,C25SamCook_breakout.jpg
+Flappy Bird,C26PaytonNunn_FlappyBird.bit,C26PaytonNunn_Flappy.jpg
