@@ -1,8 +1,154 @@
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <h1>Hello 383!</h1>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keypress Overlay</title>
+  <style>
+    :root {
+      --bg: rgba(70, 70, 70, 0.92);
+      --fg: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #f6f6f6;
+      color: #222;
+    }
+
+    .hint {
+      text-align: center;
+      padding: 24px;
+      max-width: 720px;
+      line-height: 1.4;
+    }
+
+    /* Fullscreen modal overlay */
+    #overlay {
+      position: fixed;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      pointer-events: none; /* don't block the page */
+      opacity: 0;
+      transition: opacity 220ms ease;
+      z-index: 9999;
+    }
+
+    #overlay.show {
+      opacity: 1;
+    }
+
+    /* Modal box */
+    #modal {
+      background: var(--bg);
+      color: var(--fg);
+      border-radius: 18px;
+      padding: 34px 44px;
+      min-width: 220px;
+      max-width: min(80vw, 640px);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      display: grid;
+      place-items: center;
+    }
+
+    #keyText {
+      font-size: clamp(64px, 10vw, 140px);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      line-height: 1;
+      text-align: center;
+      user-select: none;
+      white-space: pre; /* so Space can be shown nicely */
+    }
+
+    #subText {
+      margin-top: 12px;
+      font-size: 14px;
+      opacity: 0.85;
+      text-align: center;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="hint">
+    <h1 style="margin:0 0 8px;">Press any key</h1>
+    <p style="margin:0; opacity:0.7;">
+      The last key you pressed will briefly appear in a modal and fade away.
+    </p>
+  </div>
+
+  <div id="overlay" aria-hidden="true">
+    <div id="modal" role="dialog" aria-modal="true" aria-label="Last key pressed">
+      <div id="keyText">A</div>
+      <div id="subText">Key pressed</div>
+    </div>
+  </div>
+
+  <script>
+    const overlay = document.getElementById("overlay");
+    const keyText = document.getElementById("keyText");
+    const subText = document.getElementById("subText");
+
+    // Tune these as you like
+    const SHOW_MS = 350;     // stay fully visible for this long
+    const FADE_MS = 220;     // should match CSS transition
+    const TOTAL_MS = SHOW_MS + FADE_MS;
+
+    let hideTimer = null;
+    let lastShownAt = 0;
+
+    function prettyKey(e) {
+      // Prefer printable characters when available; otherwise show named keys
+      if (e.key === " ") return "Space";
+      if (e.key === "Escape") return "Esc";
+      if (e.key === "Enter") return "Enter";
+      if (e.key === "Backspace") return "Backspace";
+      if (e.key === "Tab") return "Tab";
+      if (e.key.startsWith("Arrow")) return e.key.replace("Arrow", "Arrow ");
+      // Single printable character (includes letters, numbers, punctuation)
+      if (e.key.length === 1) return e.key;
+      return e.key; // Shift, Control, Alt, Meta, etc.
+    }
+
+    function showKey(e) {
+      const label = prettyKey(e);
+
+      keyText.textContent = label;
+      subText.textContent = e.code ? e.code : "Key pressed";
+
+      // Ensure we "restart" the fade if keys are pressed rapidly
+      if (hideTimer) clearTimeout(hideTimer);
+
+      // Force immediate visible state
+      overlay.classList.add("show");
+      lastShownAt = Date.now();
+
+      // Hide after a short delay (fade is handled by CSS transition)
+      hideTimer = setTimeout(() => {
+        overlay.classList.remove("show");
+      }, SHOW_MS);
+
+      // Safety: if CSS transition gets interrupted, ensure hidden
+      setTimeout(() => {
+        // Only apply if no newer key has been shown since this timer started
+        if (Date.now() - lastShownAt >= TOTAL_MS) {
+          overlay.classList.remove("show");
+        }
+      }, TOTAL_MS + 50);
+    }
+
+    // Listen for key presses anywhere on the page
+    window.addEventListener("keydown", (e) => {
+      // Optional: ignore repeat if key is held down
+      if (e.repeat) return;
+      showKey(e);
+    });
+  </script>
+</body>
 </html>
