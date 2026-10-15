@@ -1,0 +1,3 @@
+PASS: upstream pin order; all 16 pull-ups; D9 unused; status debounce; exclusive HID/NES routing; both-player menu input; open-drain data; serial order; clock saturation; transition release.
+
+Host mocks only. Arduino Due target compilation, interrupt latency and hardware are not verified.

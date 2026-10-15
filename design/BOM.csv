@@ -1,0 +1,27 @@
+Reference,Quantity,Part/value,Notes
+Pi,1,Raspberry Pi,Model unspecified; kiosk-capable; USB host ports and HDMI
+Due,1,Arduino Due,Native USB keyboard to Pi; 3.3 V GPIO
+FPGA,1,Digilent Nexys Video,Own appropriate supply
+Joystick,2,Mechanical 4-direction arcade joystick,4 NO contacts per stick; COM to GND
+Buttons,8,NO arcade pushbutton,2 Start + 2 Select + 2 A + 2 B
+Trackball,1,RetroArcade.us B0711TKGFV 3 inch USB trackball,USB HOST J15; host compatibility bench test
+Silver button,1,Silver NO arcade pushbutton,Directly across HDMI switch button contacts; no Due/Pi GPIO
+HDMI switch,1,ASIN B0F6LM1578,Manual silver button; owner-provided 5 V status output; verify polarity
+Monitor,1,HDMI monitor,Own supply
+Speakers,1,Powered stereo speakers,3.5 mm line input; or separate amplifier
+U1,1,SN74HCT245N,DigiKey invoice line 1; 296-1612-5-ND; 20-PDIP; 5 V supply; purpose: FPGA 3.3 V to LED 5 V data
+U2,1,SN74LVC245AN,DigiKey invoice line 2; 296-8503-5-ND; 20-PDIP; 3.3 V supply; purpose: HDMI switch 5 V to Due 3.3 V status
+R1,1,330 ohm,LED serial data resistor near first DIN; 0.25 W
+R4,1,10 kohm,U1 input pulldown; 0.25 W
+R5,1,100 kohm,HDMI status input pulldown; 0.25 W
+C1 C2,2,100 nF ceramic,One directly across VCC/GND at each translator
+C3,1,1000 uF >=10 V electrolytic,Across LED supply at strip; observe polarity
+R6 R7,2,10 kohm,NES open-drain DATA pull-ups to FPGA JA6 3.3 V; 0.25 W
+LED1-LED4,3-4,SK6812 RGB 5 V addressable pixel,Fourth optional; use exact device timing and pinout
+Pixel bypass,3-4,100 nF ceramic,Required only if bare pixels lack local decoupling
+LED supply,1,Regulated 5 V >=1 A,Do not parallel with Pi/Due USB +5 V
+JA harness,1,2x6 2.54 mm Pmod mating cable/breakout,Number by mating face; JA6 feeds R6/R7 only; leave JA12 and JA10 unconnected
+HDMI cable,3,HDMI cable,Pi to switch; FPGA to switch; switch to monitor
+USB cable,2,USB host to micro-USB data cable,Pi to Due Native; Pi to Nexys PROG; Pi connector depends on model
+Audio cable,1,3.5 mm stereo TRS cable,Nexys green LINE OUT to amplifier/powered speakers
+Wiring,1,Hookup wire and terminals,Separate signal/common pairs; ground daisy chain; secure strain relief
