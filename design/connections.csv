@@ -1,0 +1,167 @@
+sheet,net,from_part,from_pin,to_part,to_pin
+01-arcade-system,USB_HID,Pi,usb_due,Due,usb
+01-arcade-system,USB_JTAG,Pi,usb_jtag,FPGA,jtag
+01-arcade-system,P1_NES,Due,p1nes,FPGA,p1
+01-arcade-system,P2_NES,Due,p2nes,FPGA,p2
+01-arcade-system,P1_CONTROLS,Player 1,bundle,Due,p1
+01-arcade-system,P2_CONTROLS,Player 2,bundle,Due,p2
+01-arcade-system,HDMI_PI,Pi,hdmi,HDMI switch,in1
+01-arcade-system,HDMI_FPGA,FPGA,hdmi,HDMI switch,in2
+01-arcade-system,HDMI_MONITOR,HDMI switch,out,Monitor,hdmi
+01-arcade-system,STEREO_AUDIO,FPGA,audio,Speakers,audio
+01-arcade-system,USB_MOUSE,FPGA,usb,Trackball,usb
+01-arcade-system,LED_DATA_3V3,FPGA,led,LED buffer,data
+01-arcade-system,GROUND,FPGA,gnd,LED buffer,gnd
+01-arcade-system,LED_HARNESS,LED buffer,strip,Pixels,in
+01-arcade-system,SWITCH_DUE,Due,switch,Switch interface,due
+01-arcade-system,SWITCH_STATUS,Switch interface,switch,HDMI switch,control
+01-arcade-system,MANUAL_HDMI_BUTTON,Silver button,pair,HDMI switch,button
+02-controls-and-ja,P1_UP,P1 joystick,UP,Due,D26
+02-controls-and-ja,P1_DOWN,P1 joystick,DOWN,Due,D27
+02-controls-and-ja,P1_LEFT,P1 joystick,LEFT,Due,D28
+02-controls-and-ja,P1_RIGHT,P1 joystick,RIGHT,Due,D29
+02-controls-and-ja,P1_START,P1 START,NO,Due,D25
+02-controls-and-ja,GND_P1_START,P1 START,COM,Due,gnd
+02-controls-and-ja,P1_SELECT,P1 SELECT,NO,Due,D24
+02-controls-and-ja,GND_P1_SELECT,P1 SELECT,COM,Due,gnd
+02-controls-and-ja,P1_A,P1 A,NO,Due,D22
+02-controls-and-ja,GND_P1_A,P1 A,COM,Due,gnd
+02-controls-and-ja,P1_B,P1 B,NO,Due,D23
+02-controls-and-ja,GND_P1_B,P1 B,COM,Due,gnd
+02-controls-and-ja,GND_P1_JOY,P1 joystick,COM,Due,gnd
+02-controls-and-ja,P2_UP,P2 joystick,UP,Due,D34
+02-controls-and-ja,P2_DOWN,P2 joystick,DOWN,Due,D35
+02-controls-and-ja,P2_LEFT,P2 joystick,LEFT,Due,D36
+02-controls-and-ja,P2_RIGHT,P2 joystick,RIGHT,Due,D37
+02-controls-and-ja,P2_START,P2 START,NO,Due,D33
+02-controls-and-ja,GND_P2_START,P2 START,COM,Due,gnd
+02-controls-and-ja,P2_SELECT,P2 SELECT,NO,Due,D32
+02-controls-and-ja,GND_P2_SELECT,P2 SELECT,COM,Due,gnd
+02-controls-and-ja,P2_A,P2 A,NO,Due,D30
+02-controls-and-ja,GND_P2_A,P2 A,COM,Due,gnd
+02-controls-and-ja,P2_B,P2 B,NO,Due,D31
+02-controls-and-ja,GND_P2_B,P2 B,COM,Due,gnd
+02-controls-and-ja,GND_P2_JOY,P2 joystick,COM,Due,gnd
+02-controls-and-ja,NES_D2,Due,D2,JA,1
+02-controls-and-ja,NES_D3,Due,D3,JA,2
+02-controls-and-ja,NES_D4,Due,D4,JA,3
+02-controls-and-ja,NES_D5,Due,D5,JA,7
+02-controls-and-ja,NES_D6,Due,D6,JA,8
+02-controls-and-ja,NES_D7,Due,D7,JA,9
+02-controls-and-ja,GND_JA5,Due,gnd2,JA,5
+02-controls-and-ja,GND_JA11,JA,5,JA,11
+02-controls-and-ja,NES_PULLUP_3V3,JA,6,R6 10 kohm,1
+02-controls-and-ja,NES_PULLUP_RAIL,R6 10 kohm,1,R7 10 kohm,1
+02-controls-and-ja,P1_DATA_PULLUP,R6 10 kohm,2,JA,3
+02-controls-and-ja,P2_DATA_PULLUP,R7 10 kohm,2,JA,9
+03-led-and-hdmi-interfaces,LED_DATA_3V3,JA,4,U1,2
+03-led-and-hdmi-interfaces,LED_IDLE_PULLDOWN,JA,4,R4 10 kohm,1
+03-led-and-hdmi-interfaces,LED_PULLDOWN_GND,R4 10 kohm,2,U1,10
+03-led-and-hdmi-interfaces,LED_DATA_5V,U1,18,R1 330 ohm,1
+03-led-and-hdmi-interfaces,LED_DIN,R1 330 ohm,2,LED1,din
+03-led-and-hdmi-interfaces,LED_CHAIN_1,LED1,dout,LED2,din
+03-led-and-hdmi-interfaces,LED_CHAIN_2,LED2,dout,LED3,din
+03-led-and-hdmi-interfaces,LED_CHAIN_3,LED3,dout,LED4 optional,din
+03-led-and-hdmi-interfaces,LED_5V,LED power,5,U1,20
+03-led-and-hdmi-interfaces,HCT_DIR_HIGH,LED power,5,U1,1
+03-led-and-hdmi-interfaces,COMMON_GND,LED power,gnd,JA,5
+03-led-and-hdmi-interfaces,JA_GROUNDS,JA,11,JA,5
+03-led-and-hdmi-interfaces,LED1_5V,LED power,5,LED1,5
+03-led-and-hdmi-interfaces,LED1_GND,LED power,gnd,LED1,gnd
+03-led-and-hdmi-interfaces,LED2_5V,LED power,5,LED2,5
+03-led-and-hdmi-interfaces,LED2_GND,LED power,gnd,LED2,gnd
+03-led-and-hdmi-interfaces,LED3_5V,LED power,5,LED3,5
+03-led-and-hdmi-interfaces,LED3_GND,LED power,gnd,LED3,gnd
+03-led-and-hdmi-interfaces,LED4_5V,LED power,5,LED4 optional,5
+03-led-and-hdmi-interfaces,LED4_GND,LED power,gnd,LED4 optional,gnd
+03-led-and-hdmi-interfaces,U1_GND_3,U1,3,LED power,gnd
+03-led-and-hdmi-interfaces,U1_GND_4,U1,4,LED power,gnd
+03-led-and-hdmi-interfaces,U1_GND_5,U1,5,LED power,gnd
+03-led-and-hdmi-interfaces,U1_GND_6,U1,6,LED power,gnd
+03-led-and-hdmi-interfaces,U1_GND_7,U1,7,LED power,gnd
+03-led-and-hdmi-interfaces,U1_GND_8,U1,8,LED power,gnd
+03-led-and-hdmi-interfaces,U1_GND_9,U1,9,LED power,gnd
+03-led-and-hdmi-interfaces,U1_GND_10,U1,10,LED power,gnd
+03-led-and-hdmi-interfaces,U1_GND_19,U1,19,LED power,gnd
+03-led-and-hdmi-interfaces,C1 100 nF_5V,LED power,5,C1 100 nF,p
+03-led-and-hdmi-interfaces,C1 100 nF_GND,C1 100 nF,n,LED power,gnd
+03-led-and-hdmi-interfaces,C3 1000 uF 10 V_5V,LED power,5,C3 1000 uF 10 V,p
+03-led-and-hdmi-interfaces,C3 1000 uF 10 V_GND,C3 1000 uF 10 V,n,LED power,gnd
+03-led-and-hdmi-interfaces,DUE_3V3,Due,3v3,U2,20
+03-led-and-hdmi-interfaces,LVC_DIR_HIGH,Due,3v3,U2,1
+03-led-and-hdmi-interfaces,SYSTEM_COMMON_GND,Due,gnd,LED power,gnd
+03-led-and-hdmi-interfaces,U2_GND,Due,gnd,U2,10
+03-led-and-hdmi-interfaces,U2_GND_3,U2,3,Due,gnd
+03-led-and-hdmi-interfaces,U2_GND_4,U2,4,Due,gnd
+03-led-and-hdmi-interfaces,U2_GND_5,U2,5,Due,gnd
+03-led-and-hdmi-interfaces,U2_GND_6,U2,6,Due,gnd
+03-led-and-hdmi-interfaces,U2_GND_7,U2,7,Due,gnd
+03-led-and-hdmi-interfaces,U2_GND_8,U2,8,Due,gnd
+03-led-and-hdmi-interfaces,U2_GND_9,U2,9,Due,gnd
+03-led-and-hdmi-interfaces,U2_GND_19,U2,19,Due,gnd
+03-led-and-hdmi-interfaces,HDMI_STATUS_5V,HDMI switch,status,U2,2
+03-led-and-hdmi-interfaces,HDMI_STATUS_3V3,U2,18,Due,D8
+03-led-and-hdmi-interfaces,HDMI_COMMON_GND,HDMI switch,gnd,Due,gnd
+03-led-and-hdmi-interfaces,C2_3V3,Due,3v3,C2 100 nF,p
+03-led-and-hdmi-interfaces,C2_GND,C2 100 nF,n,Due,gnd
+03-led-and-hdmi-interfaces,STATUS_PULLDOWN_5V,HDMI switch,status,R5 100 kohm,2
+03-led-and-hdmi-interfaces,STATUS_PULLDOWN_GND,R5 100 kohm,1,Due,gnd
+03-led-and-hdmi-interfaces,MANUAL_HDMI_TOGGLE,Silver button,NO,HDMI switch,toggle
+03-led-and-hdmi-interfaces,MANUAL_HDMI_RETURN,Silver button,COM,HDMI switch,gnd
+04-realistic-breadboard,P1_A,P1 A,NO,Due,D22
+04-realistic-breadboard,P1_B,P1 B,NO,Due,D23
+04-realistic-breadboard,P1_SELECT,P1 SELECT,NO,Due,D24
+04-realistic-breadboard,P1_START,P1 START,NO,Due,D25
+04-realistic-breadboard,P1_UP,P1 joystick,UP,Due,D26
+04-realistic-breadboard,P1_DOWN,P1 joystick,DOWN,Due,D27
+04-realistic-breadboard,P1_LEFT,P1 joystick,LEFT,Due,D28
+04-realistic-breadboard,P1_RIGHT,P1 joystick,RIGHT,Due,D29
+04-realistic-breadboard,P1 joystick_GND,P1 joystick,COM,Due,gnd2
+04-realistic-breadboard,P1 START_GND,P1 START,COM,Due,gnd2
+04-realistic-breadboard,P1 SELECT_GND,P1 SELECT,COM,Due,gnd2
+04-realistic-breadboard,P1 A_GND,P1 A,COM,Due,gnd2
+04-realistic-breadboard,P1 B_GND,P1 B,COM,Due,gnd2
+04-realistic-breadboard,P2_A,P2 A,NO,Due,D30
+04-realistic-breadboard,P2_B,P2 B,NO,Due,D31
+04-realistic-breadboard,P2_SELECT,P2 SELECT,NO,Due,D32
+04-realistic-breadboard,P2_START,P2 START,NO,Due,D33
+04-realistic-breadboard,P2_UP,P2 joystick,UP,Due,D34
+04-realistic-breadboard,P2_DOWN,P2 joystick,DOWN,Due,D35
+04-realistic-breadboard,P2_LEFT,P2 joystick,LEFT,Due,D36
+04-realistic-breadboard,P2_RIGHT,P2 joystick,RIGHT,Due,D37
+04-realistic-breadboard,P2 joystick_GND,P2 joystick,COM,Due,gnd2
+04-realistic-breadboard,P2 START_GND,P2 START,COM,Due,gnd2
+04-realistic-breadboard,P2 SELECT_GND,P2 SELECT,COM,Due,gnd2
+04-realistic-breadboard,P2 A_GND,P2 A,COM,Due,gnd2
+04-realistic-breadboard,P2 B_GND,P2 B,COM,Due,gnd2
+04-realistic-breadboard,NES_D2,Due,D2,FPGA,1
+04-realistic-breadboard,NES_D3,Due,D3,FPGA,2
+04-realistic-breadboard,NES_D4,Due,D4,FPGA,3
+04-realistic-breadboard,NES_D5,Due,D5,FPGA,7
+04-realistic-breadboard,NES_D6,Due,D6,FPGA,8
+04-realistic-breadboard,NES_D7,Due,D7,FPGA,9
+04-realistic-breadboard,COMMON_GND,Due,gnd2,Interface,gnd
+04-realistic-breadboard,DUE_3V3,Due,3v3,Interface,3v3
+04-realistic-breadboard,HDMI_STATUS_3V3,Due,D8,Interface,status_out
+04-realistic-breadboard,JA4_INTERFACE,FPGA,4,Interface,led_in
+04-realistic-breadboard,JA5_INTERFACE,FPGA,5,Interface,gnd
+04-realistic-breadboard,JA6_INTERFACE,FPGA,6,Interface,fpga3v3
+04-realistic-breadboard,JA3_INTERFACE,FPGA,3,Interface,data1
+04-realistic-breadboard,JA9_INTERFACE,FPGA,9,Interface,data2
+04-realistic-breadboard,JA11_INTERFACE,FPGA,11,Interface,gnd
+04-realistic-breadboard,USB_HID,Pi,usb_due,Due,usb
+04-realistic-breadboard,USB_JTAG,Pi,usb_jtag,FPGA,jtag
+04-realistic-breadboard,HDMI_PI,Pi,hdmi,HDMI switch,in1
+04-realistic-breadboard,HDMI_FPGA,FPGA,hdmi,HDMI switch,in2
+04-realistic-breadboard,HDMI_MONITOR,HDMI switch,out,Monitor,hdmi
+04-realistic-breadboard,STEREO_AUDIO,FPGA,audio,Speakers,audio
+04-realistic-breadboard,USB_MOUSE,FPGA,usb,Trackball,usb
+04-realistic-breadboard,HDMI_STATUS_5V,HDMI switch,status,Interface,status_in
+04-realistic-breadboard,HDMI_GND,HDMI switch,gnd,Interface,swgnd
+04-realistic-breadboard,SILVER_BUTTON_NO,Silver button,NO,HDMI switch,toggle
+04-realistic-breadboard,SILVER_BUTTON_COM,Silver button,COM,HDMI switch,gnd
+04-realistic-breadboard,STRIP_led_out,Interface,led_out,Pixels,din
+04-realistic-breadboard,STRIP_led5,Interface,led5,Pixels,5
+04-realistic-breadboard,STRIP_ledgnd,Interface,ledgnd,Pixels,gnd
+04-realistic-breadboard,LED_POWER_5,LED power,5,Interface,5
+04-realistic-breadboard,LED_POWER_gnd,LED power,gnd,Interface,pgnd

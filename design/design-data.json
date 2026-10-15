@@ -1,0 +1,8244 @@
+[
+  {
+    "sheet": "01-arcade-system",
+    "title": "ARCADE / Cabinet interconnect",
+    "items": {
+      "Pi": {
+        "part": "pi",
+        "pins": {
+          "usb_due": {
+            "id": "connector0",
+            "label": "USB host -> Due Native",
+            "x": 280,
+            "y": 100,
+            "side": "R"
+          },
+          "usb_jtag": {
+            "id": "connector1",
+            "label": "USB host -> FPGA PROG",
+            "x": 280,
+            "y": 124,
+            "side": "R"
+          },
+          "hdmi": {
+            "id": "connector2",
+            "label": "HDMI output",
+            "x": 280,
+            "y": 148,
+            "side": "R"
+          }
+        },
+        "index": 100
+      },
+      "Due": {
+        "part": "due_overview",
+        "pins": {
+          "usb": {
+            "id": "connector0",
+            "label": "Native USB / HID",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "p1": {
+            "id": "connector1",
+            "label": "P1 / 8 inputs + GND",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "p2": {
+            "id": "connector2",
+            "label": "P2 / 8 inputs + GND",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "p1nes": {
+            "id": "connector3",
+            "label": "P1 NES / D2 D3 D4",
+            "x": 300,
+            "y": 100,
+            "side": "R"
+          },
+          "p2nes": {
+            "id": "connector4",
+            "label": "P2 NES / D5 D6 D7",
+            "x": 300,
+            "y": 124,
+            "side": "R"
+          },
+          "switch": {
+            "id": "connector5",
+            "label": "Status / D8 GND",
+            "x": 300,
+            "y": 148,
+            "side": "R"
+          }
+        },
+        "index": 110
+      },
+      "FPGA": {
+        "part": "nexys_overview",
+        "pins": {
+          "jtag": {
+            "id": "connector0",
+            "label": "PROG micro-USB / JTAG",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "p1": {
+            "id": "connector1",
+            "label": "JA1 / JA2 / JA3",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "p2": {
+            "id": "connector2",
+            "label": "JA7 / JA8 / JA9",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "hdmi": {
+            "id": "connector3",
+            "label": "HDMI OUT",
+            "x": 320,
+            "y": 100,
+            "side": "R"
+          },
+          "audio": {
+            "id": "connector4",
+            "label": "Green LINE OUT",
+            "x": 320,
+            "y": 124,
+            "side": "R"
+          },
+          "usb": {
+            "id": "connector5",
+            "label": "J15 USB HOST",
+            "x": 320,
+            "y": 148,
+            "side": "R"
+          },
+          "led": {
+            "id": "connector6",
+            "label": "JA4 / LED data",
+            "x": 320,
+            "y": 172,
+            "side": "R"
+          },
+          "gnd": {
+            "id": "connector7",
+            "label": "JA5 + JA11 / GND",
+            "x": 320,
+            "y": 196,
+            "side": "R"
+          }
+        },
+        "index": 120
+      },
+      "Player 1": {
+        "part": "panel",
+        "pins": {
+          "bundle": {
+            "id": "connector0",
+            "label": "8 NO contacts + common GND",
+            "x": 290,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 130
+      },
+      "Player 2": {
+        "part": "panel",
+        "pins": {
+          "bundle": {
+            "id": "connector0",
+            "label": "8 NO contacts + common GND",
+            "x": 290,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 140
+      },
+      "HDMI switch": {
+        "part": "hdmi_overview",
+        "pins": {
+          "in1": {
+            "id": "connector0",
+            "label": "Input 1 / Pi",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "in2": {
+            "id": "connector1",
+            "label": "Input 2 / FPGA",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "control": {
+            "id": "connector2",
+            "label": "Status 5 V + GND",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "button": {
+            "id": "connector3",
+            "label": "Silver button / NO + COM",
+            "x": 0,
+            "y": 172,
+            "side": "L"
+          },
+          "out": {
+            "id": "connector4",
+            "label": "HDMI to monitor",
+            "x": 300,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 150
+      },
+      "Monitor": {
+        "part": "monitor",
+        "pins": {
+          "hdmi": {
+            "id": "connector0",
+            "label": "HDMI input",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          }
+        },
+        "index": 160
+      },
+      "Speakers": {
+        "part": "speakers",
+        "pins": {
+          "audio": {
+            "id": "connector0",
+            "label": "3.5 mm stereo input",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          }
+        },
+        "index": 170
+      },
+      "Trackball": {
+        "part": "trackball",
+        "pins": {
+          "usb": {
+            "id": "connector0",
+            "label": "USB cable / mouse",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          }
+        },
+        "index": 180
+      },
+      "LED buffer": {
+        "part": "led_module",
+        "pins": {
+          "data": {
+            "id": "connector0",
+            "label": "JA4 / 3.3 V data",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector1",
+            "label": "GND",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "strip": {
+            "id": "connector2",
+            "label": "5 V + data + GND",
+            "x": 300,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 190
+      },
+      "Pixels": {
+        "part": "strip_overview",
+        "pins": {
+          "in": {
+            "id": "connector0",
+            "label": "5 V / DIN / GND",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          }
+        },
+        "index": 200
+      },
+      "Switch interface": {
+        "part": "switch_module",
+        "pins": {
+          "due": {
+            "id": "connector0",
+            "label": "Due D8 / GND",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "switch": {
+            "id": "connector1",
+            "label": "STATUS_5V / GND",
+            "x": 300,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 210
+      },
+      "Silver button": {
+        "part": "silver_overview",
+        "pins": {
+          "pair": {
+            "id": "connector0",
+            "label": "NO + COM / switch only",
+            "x": 290,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 220
+      },
+      "Read me": {
+        "part": "overview_note",
+        "pins": {},
+        "index": 230
+      }
+    },
+    "wires": [
+      {
+        "a": [
+          "Pi",
+          "usb_due"
+        ],
+        "b": [
+          "Due",
+          "usb"
+        ],
+        "net": "USB_HID",
+        "color": "#336b97",
+        "pts": [
+          [
+            330,
+            240
+          ],
+          [
+            400,
+            240
+          ],
+          [
+            480,
+            240
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Pi",
+          "usb_jtag"
+        ],
+        "b": [
+          "FPGA",
+          "jtag"
+        ],
+        "net": "USB_JTAG",
+        "color": "#336b97",
+        "pts": [
+          [
+            330,
+            264
+          ],
+          [
+            370,
+            264
+          ],
+          [
+            370,
+            110
+          ],
+          [
+            880,
+            110
+          ],
+          [
+            880,
+            240
+          ],
+          [
+            950,
+            240
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "p1nes"
+        ],
+        "b": [
+          "FPGA",
+          "p1"
+        ],
+        "net": "P1_NES",
+        "color": "#2177b6",
+        "pts": [
+          [
+            780,
+            240
+          ],
+          [
+            850,
+            240
+          ],
+          [
+            850,
+            264
+          ],
+          [
+            950,
+            264
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "p2nes"
+        ],
+        "b": [
+          "FPGA",
+          "p2"
+        ],
+        "net": "P2_NES",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            780,
+            264
+          ],
+          [
+            865,
+            264
+          ],
+          [
+            865,
+            288
+          ],
+          [
+            950,
+            288
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Player 1",
+          "bundle"
+        ],
+        "b": [
+          "Due",
+          "p1"
+        ],
+        "net": "P1_CONTROLS",
+        "color": "#2177b6",
+        "pts": [
+          [
+            340,
+            600
+          ],
+          [
+            390,
+            600
+          ],
+          [
+            390,
+            264
+          ],
+          [
+            480,
+            264
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Player 2",
+          "bundle"
+        ],
+        "b": [
+          "Due",
+          "p2"
+        ],
+        "net": "P2_CONTROLS",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            340,
+            820
+          ],
+          [
+            415,
+            820
+          ],
+          [
+            415,
+            288
+          ],
+          [
+            480,
+            288
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Pi",
+          "hdmi"
+        ],
+        "b": [
+          "HDMI switch",
+          "in1"
+        ],
+        "net": "HDMI_PI",
+        "color": "#6c6caf",
+        "pts": [
+          [
+            330,
+            288
+          ],
+          [
+            355,
+            288
+          ],
+          [
+            355,
+            1060
+          ],
+          [
+            480,
+            1060
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "hdmi"
+        ],
+        "b": [
+          "HDMI switch",
+          "in2"
+        ],
+        "net": "HDMI_FPGA",
+        "color": "#6c6caf",
+        "pts": [
+          [
+            1270,
+            240
+          ],
+          [
+            1290,
+            240
+          ],
+          [
+            1290,
+            920
+          ],
+          [
+            440,
+            920
+          ],
+          [
+            440,
+            1084
+          ],
+          [
+            480,
+            1084
+          ]
+        ]
+      },
+      {
+        "a": [
+          "HDMI switch",
+          "out"
+        ],
+        "b": [
+          "Monitor",
+          "hdmi"
+        ],
+        "net": "HDMI_MONITOR",
+        "color": "#6c6caf",
+        "pts": [
+          [
+            780,
+            1060
+          ],
+          [
+            960,
+            1060
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "audio"
+        ],
+        "b": [
+          "Speakers",
+          "audio"
+        ],
+        "net": "STEREO_AUDIO",
+        "color": "#489177",
+        "pts": [
+          [
+            1270,
+            264
+          ],
+          [
+            1350,
+            264
+          ],
+          [
+            1350,
+            240
+          ],
+          [
+            1400,
+            240
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "usb"
+        ],
+        "b": [
+          "Trackball",
+          "usb"
+        ],
+        "net": "USB_MOUSE",
+        "color": "#336b97",
+        "pts": [
+          [
+            1270,
+            288
+          ],
+          [
+            1300,
+            288
+          ],
+          [
+            1300,
+            560
+          ],
+          [
+            1320,
+            560
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "led"
+        ],
+        "b": [
+          "LED buffer",
+          "data"
+        ],
+        "net": "LED_DATA_3V3",
+        "color": "#18977d",
+        "pts": [
+          [
+            1270,
+            312
+          ],
+          [
+            1280,
+            312
+          ],
+          [
+            1280,
+            670
+          ],
+          [
+            900,
+            670
+          ],
+          [
+            900,
+            810
+          ],
+          [
+            950,
+            810
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "gnd"
+        ],
+        "b": [
+          "LED buffer",
+          "gnd"
+        ],
+        "net": "GROUND",
+        "color": "#445366",
+        "pts": [
+          [
+            1270,
+            336
+          ],
+          [
+            1265,
+            336
+          ],
+          [
+            1265,
+            650
+          ],
+          [
+            885,
+            650
+          ],
+          [
+            885,
+            834
+          ],
+          [
+            950,
+            834
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED buffer",
+          "strip"
+        ],
+        "b": [
+          "Pixels",
+          "in"
+        ],
+        "net": "LED_HARNESS",
+        "color": "#18977d",
+        "pts": [
+          [
+            1250,
+            810
+          ],
+          [
+            1320,
+            810
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "switch"
+        ],
+        "b": [
+          "Switch interface",
+          "due"
+        ],
+        "net": "SWITCH_DUE",
+        "color": "#bc5d19",
+        "pts": [
+          [
+            780,
+            288
+          ],
+          [
+            820,
+            288
+          ],
+          [
+            820,
+            460
+          ],
+          [
+            450,
+            460
+          ],
+          [
+            450,
+            600
+          ],
+          [
+            480,
+            600
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Switch interface",
+          "switch"
+        ],
+        "b": [
+          "HDMI switch",
+          "control"
+        ],
+        "net": "SWITCH_STATUS",
+        "color": "#bc5d19",
+        "pts": [
+          [
+            780,
+            600
+          ],
+          [
+            805,
+            600
+          ],
+          [
+            805,
+            900
+          ],
+          [
+            455,
+            900
+          ],
+          [
+            455,
+            1108
+          ],
+          [
+            480,
+            1108
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Silver button",
+          "pair"
+        ],
+        "b": [
+          "HDMI switch",
+          "button"
+        ],
+        "net": "MANUAL_HDMI_BUTTON",
+        "color": "#b65078",
+        "pts": [
+          [
+            340,
+            1070
+          ],
+          [
+            430,
+            1070
+          ],
+          [
+            430,
+            1132
+          ],
+          [
+            480,
+            1132
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "sheet": "02-controls-and-ja",
+    "title": "ARCADE / Buttons, joysticks and NES interface",
+    "items": {
+      "Due": {
+        "part": "due_controls",
+        "pins": {
+          "D22": {
+            "id": "connector0",
+            "label": "D22 / P1 A",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "D23": {
+            "id": "connector1",
+            "label": "D23 / P1 B",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "D24": {
+            "id": "connector2",
+            "label": "D24 / P1 SELECT",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "D25": {
+            "id": "connector3",
+            "label": "D25 / P1 START",
+            "x": 0,
+            "y": 172,
+            "side": "L"
+          },
+          "D26": {
+            "id": "connector4",
+            "label": "D26 / P1 UP",
+            "x": 0,
+            "y": 196,
+            "side": "L"
+          },
+          "D27": {
+            "id": "connector5",
+            "label": "D27 / P1 DOWN",
+            "x": 0,
+            "y": 220,
+            "side": "L"
+          },
+          "D28": {
+            "id": "connector6",
+            "label": "D28 / P1 LEFT",
+            "x": 0,
+            "y": 244,
+            "side": "L"
+          },
+          "D29": {
+            "id": "connector7",
+            "label": "D29 / P1 RIGHT",
+            "x": 0,
+            "y": 268,
+            "side": "L"
+          },
+          "D30": {
+            "id": "connector8",
+            "label": "D30 / P2 A",
+            "x": 0,
+            "y": 292,
+            "side": "L"
+          },
+          "D31": {
+            "id": "connector9",
+            "label": "D31 / P2 B",
+            "x": 0,
+            "y": 316,
+            "side": "L"
+          },
+          "D32": {
+            "id": "connector10",
+            "label": "D32 / P2 SELECT",
+            "x": 0,
+            "y": 340,
+            "side": "L"
+          },
+          "D33": {
+            "id": "connector11",
+            "label": "D33 / P2 START",
+            "x": 0,
+            "y": 364,
+            "side": "L"
+          },
+          "D34": {
+            "id": "connector12",
+            "label": "D34 / P2 UP",
+            "x": 0,
+            "y": 388,
+            "side": "L"
+          },
+          "D35": {
+            "id": "connector13",
+            "label": "D35 / P2 DOWN",
+            "x": 0,
+            "y": 412,
+            "side": "L"
+          },
+          "D36": {
+            "id": "connector14",
+            "label": "D36 / P2 LEFT",
+            "x": 0,
+            "y": 436,
+            "side": "L"
+          },
+          "D37": {
+            "id": "connector15",
+            "label": "D37 / P2 RIGHT",
+            "x": 0,
+            "y": 460,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector16",
+            "label": "GND / switch commons",
+            "x": 0,
+            "y": 484,
+            "side": "L"
+          },
+          "D2": {
+            "id": "connector17",
+            "label": "D2 / P1 latch IN",
+            "x": 340,
+            "y": 100,
+            "side": "R"
+          },
+          "D3": {
+            "id": "connector18",
+            "label": "D3 / P1 clock IN",
+            "x": 340,
+            "y": 124,
+            "side": "R"
+          },
+          "D4": {
+            "id": "connector19",
+            "label": "D4 / P1 data OUT",
+            "x": 340,
+            "y": 148,
+            "side": "R"
+          },
+          "D5": {
+            "id": "connector20",
+            "label": "D5 / P2 latch IN",
+            "x": 340,
+            "y": 172,
+            "side": "R"
+          },
+          "D6": {
+            "id": "connector21",
+            "label": "D6 / P2 clock IN",
+            "x": 340,
+            "y": 196,
+            "side": "R"
+          },
+          "D7": {
+            "id": "connector22",
+            "label": "D7 / P2 data OUT",
+            "x": 340,
+            "y": 220,
+            "side": "R"
+          },
+          "gnd2": {
+            "id": "connector23",
+            "label": "GND / FPGA reference",
+            "x": 340,
+            "y": 244,
+            "side": "R"
+          }
+        },
+        "index": 100
+      },
+      "JA": {
+        "part": "ja_controls",
+        "pins": {
+          "1": {
+            "id": "connector0",
+            "label": "JA1 / P1 LATCH ->",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "2": {
+            "id": "connector1",
+            "label": "JA2 / P1 CLOCK ->",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "3": {
+            "id": "connector2",
+            "label": "JA3 / P1 DATA <-",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "7": {
+            "id": "connector3",
+            "label": "JA7 / P2 LATCH ->",
+            "x": 0,
+            "y": 172,
+            "side": "L"
+          },
+          "8": {
+            "id": "connector4",
+            "label": "JA8 / P2 CLOCK ->",
+            "x": 0,
+            "y": 196,
+            "side": "L"
+          },
+          "9": {
+            "id": "connector5",
+            "label": "JA9 / P2 DATA <-",
+            "x": 0,
+            "y": 220,
+            "side": "L"
+          },
+          "5": {
+            "id": "connector6",
+            "label": "JA5 / GND",
+            "x": 0,
+            "y": 244,
+            "side": "L"
+          },
+          "11": {
+            "id": "connector7",
+            "label": "JA11 / GND",
+            "x": 0,
+            "y": 268,
+            "side": "L"
+          },
+          "6": {
+            "id": "connector8",
+            "label": "JA6 / 3.3 V / R6 R7",
+            "x": 320,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 110
+      },
+      "P1 joystick": {
+        "part": "joystick",
+        "pins": {
+          "UP": {
+            "id": "connector0",
+            "label": "UP / NO",
+            "x": 300,
+            "y": 100,
+            "side": "R"
+          },
+          "DOWN": {
+            "id": "connector1",
+            "label": "DOWN / NO",
+            "x": 300,
+            "y": 124,
+            "side": "R"
+          },
+          "LEFT": {
+            "id": "connector2",
+            "label": "LEFT / NO",
+            "x": 300,
+            "y": 148,
+            "side": "R"
+          },
+          "RIGHT": {
+            "id": "connector3",
+            "label": "RIGHT / NO",
+            "x": 300,
+            "y": 172,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector4",
+            "label": "All COM terminals / GND",
+            "x": 300,
+            "y": 196,
+            "side": "R"
+          }
+        },
+        "index": 120
+      },
+      "P1 START": {
+        "part": "button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / signal",
+            "x": 250,
+            "y": 70,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / GND",
+            "x": 250,
+            "y": 95,
+            "side": "R"
+          }
+        },
+        "index": 130
+      },
+      "P1 SELECT": {
+        "part": "button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / signal",
+            "x": 250,
+            "y": 70,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / GND",
+            "x": 250,
+            "y": 95,
+            "side": "R"
+          }
+        },
+        "index": 140
+      },
+      "P1 A": {
+        "part": "button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / signal",
+            "x": 250,
+            "y": 70,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / GND",
+            "x": 250,
+            "y": 95,
+            "side": "R"
+          }
+        },
+        "index": 150
+      },
+      "P1 B": {
+        "part": "button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / signal",
+            "x": 250,
+            "y": 70,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / GND",
+            "x": 250,
+            "y": 95,
+            "side": "R"
+          }
+        },
+        "index": 160
+      },
+      "P2 joystick": {
+        "part": "joystick",
+        "pins": {
+          "UP": {
+            "id": "connector0",
+            "label": "UP / NO",
+            "x": 300,
+            "y": 100,
+            "side": "R"
+          },
+          "DOWN": {
+            "id": "connector1",
+            "label": "DOWN / NO",
+            "x": 300,
+            "y": 124,
+            "side": "R"
+          },
+          "LEFT": {
+            "id": "connector2",
+            "label": "LEFT / NO",
+            "x": 300,
+            "y": 148,
+            "side": "R"
+          },
+          "RIGHT": {
+            "id": "connector3",
+            "label": "RIGHT / NO",
+            "x": 300,
+            "y": 172,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector4",
+            "label": "All COM terminals / GND",
+            "x": 300,
+            "y": 196,
+            "side": "R"
+          }
+        },
+        "index": 170
+      },
+      "P2 START": {
+        "part": "button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / signal",
+            "x": 250,
+            "y": 70,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / GND",
+            "x": 250,
+            "y": 95,
+            "side": "R"
+          }
+        },
+        "index": 180
+      },
+      "P2 SELECT": {
+        "part": "button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / signal",
+            "x": 250,
+            "y": 70,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / GND",
+            "x": 250,
+            "y": 95,
+            "side": "R"
+          }
+        },
+        "index": 190
+      },
+      "P2 A": {
+        "part": "button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / signal",
+            "x": 250,
+            "y": 70,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / GND",
+            "x": 250,
+            "y": 95,
+            "side": "R"
+          }
+        },
+        "index": 200
+      },
+      "P2 B": {
+        "part": "button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / signal",
+            "x": 250,
+            "y": 70,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / GND",
+            "x": 250,
+            "y": 95,
+            "side": "R"
+          }
+        },
+        "index": 210
+      },
+      "R6 10 kohm": {
+        "part": "nes_pullup",
+        "pins": {
+          "1": {
+            "id": "connector0",
+            "label": "1",
+            "x": 0,
+            "y": 53,
+            "side": "L"
+          },
+          "2": {
+            "id": "connector1",
+            "label": "2",
+            "x": 150,
+            "y": 53,
+            "side": "R"
+          }
+        },
+        "index": 220
+      },
+      "R7 10 kohm": {
+        "part": "nes_pullup",
+        "pins": {
+          "1": {
+            "id": "connector0",
+            "label": "1",
+            "x": 0,
+            "y": 53,
+            "side": "L"
+          },
+          "2": {
+            "id": "connector1",
+            "label": "2",
+            "x": 150,
+            "y": 53,
+            "side": "R"
+          }
+        },
+        "index": 230
+      },
+      "JA orientation": {
+        "part": "ja_orientation",
+        "pins": {},
+        "index": 240
+      },
+      "NES behavior": {
+        "part": "nes_behavior",
+        "pins": {},
+        "index": 250
+      },
+      "Contact note": {
+        "part": "contact_note",
+        "pins": {},
+        "index": 260
+      }
+    },
+    "wires": [
+      {
+        "a": [
+          "P1 joystick",
+          "UP"
+        ],
+        "b": [
+          "Due",
+          "D26"
+        ],
+        "net": "P1_UP",
+        "color": "#2177b6",
+        "pts": [
+          [
+            360,
+            250
+          ],
+          [
+            430,
+            250
+          ],
+          [
+            430,
+            716
+          ],
+          [
+            650,
+            716
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "DOWN"
+        ],
+        "b": [
+          "Due",
+          "D27"
+        ],
+        "net": "P1_DOWN",
+        "color": "#2177b6",
+        "pts": [
+          [
+            360,
+            274
+          ],
+          [
+            443,
+            274
+          ],
+          [
+            443,
+            740
+          ],
+          [
+            650,
+            740
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "LEFT"
+        ],
+        "b": [
+          "Due",
+          "D28"
+        ],
+        "net": "P1_LEFT",
+        "color": "#2177b6",
+        "pts": [
+          [
+            360,
+            298
+          ],
+          [
+            456,
+            298
+          ],
+          [
+            456,
+            764
+          ],
+          [
+            650,
+            764
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "RIGHT"
+        ],
+        "b": [
+          "Due",
+          "D29"
+        ],
+        "net": "P1_RIGHT",
+        "color": "#2177b6",
+        "pts": [
+          [
+            360,
+            322
+          ],
+          [
+            469,
+            322
+          ],
+          [
+            469,
+            788
+          ],
+          [
+            650,
+            788
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 START",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D25"
+        ],
+        "net": "P1_START",
+        "color": "#2177b6",
+        "pts": [
+          [
+            360,
+            480
+          ],
+          [
+            500,
+            480
+          ],
+          [
+            500,
+            692
+          ],
+          [
+            650,
+            692
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 START",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P1_START",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            505
+          ],
+          [
+            390,
+            505
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 SELECT",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D24"
+        ],
+        "net": "P1_SELECT",
+        "color": "#2177b6",
+        "pts": [
+          [
+            360,
+            590
+          ],
+          [
+            515,
+            590
+          ],
+          [
+            515,
+            668
+          ],
+          [
+            650,
+            668
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 SELECT",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P1_SELECT",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            615
+          ],
+          [
+            390,
+            615
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 A",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D22"
+        ],
+        "net": "P1_A",
+        "color": "#2177b6",
+        "pts": [
+          [
+            360,
+            700
+          ],
+          [
+            530,
+            700
+          ],
+          [
+            530,
+            620
+          ],
+          [
+            650,
+            620
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 A",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P1_A",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            725
+          ],
+          [
+            390,
+            725
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 B",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D23"
+        ],
+        "net": "P1_B",
+        "color": "#2177b6",
+        "pts": [
+          [
+            360,
+            810
+          ],
+          [
+            545,
+            810
+          ],
+          [
+            545,
+            644
+          ],
+          [
+            650,
+            644
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 B",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P1_B",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            835
+          ],
+          [
+            390,
+            835
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P1_JOY",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            346
+          ],
+          [
+            390,
+            346
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "UP"
+        ],
+        "b": [
+          "Due",
+          "D34"
+        ],
+        "net": "P2_UP",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            360,
+            1030
+          ],
+          [
+            430,
+            1030
+          ],
+          [
+            430,
+            908
+          ],
+          [
+            650,
+            908
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "DOWN"
+        ],
+        "b": [
+          "Due",
+          "D35"
+        ],
+        "net": "P2_DOWN",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            360,
+            1054
+          ],
+          [
+            443,
+            1054
+          ],
+          [
+            443,
+            932
+          ],
+          [
+            650,
+            932
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "LEFT"
+        ],
+        "b": [
+          "Due",
+          "D36"
+        ],
+        "net": "P2_LEFT",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            360,
+            1078
+          ],
+          [
+            456,
+            1078
+          ],
+          [
+            456,
+            956
+          ],
+          [
+            650,
+            956
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "RIGHT"
+        ],
+        "b": [
+          "Due",
+          "D37"
+        ],
+        "net": "P2_RIGHT",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            360,
+            1102
+          ],
+          [
+            469,
+            1102
+          ],
+          [
+            469,
+            980
+          ],
+          [
+            650,
+            980
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 START",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D33"
+        ],
+        "net": "P2_START",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            360,
+            1260
+          ],
+          [
+            500,
+            1260
+          ],
+          [
+            500,
+            884
+          ],
+          [
+            650,
+            884
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 START",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P2_START",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            1285
+          ],
+          [
+            390,
+            1285
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 SELECT",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D32"
+        ],
+        "net": "P2_SELECT",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            360,
+            1370
+          ],
+          [
+            515,
+            1370
+          ],
+          [
+            515,
+            860
+          ],
+          [
+            650,
+            860
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 SELECT",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P2_SELECT",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            1395
+          ],
+          [
+            390,
+            1395
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 A",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D30"
+        ],
+        "net": "P2_A",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            360,
+            1480
+          ],
+          [
+            530,
+            1480
+          ],
+          [
+            530,
+            812
+          ],
+          [
+            650,
+            812
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 A",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P2_A",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            1505
+          ],
+          [
+            390,
+            1505
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 B",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D31"
+        ],
+        "net": "P2_B",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            360,
+            1590
+          ],
+          [
+            545,
+            1590
+          ],
+          [
+            545,
+            836
+          ],
+          [
+            650,
+            836
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 B",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P2_B",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            1615
+          ],
+          [
+            390,
+            1615
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "GND_P2_JOY",
+        "color": "#445366",
+        "pts": [
+          [
+            360,
+            1126
+          ],
+          [
+            390,
+            1126
+          ],
+          [
+            390,
+            1760
+          ],
+          [
+            610,
+            1760
+          ],
+          [
+            610,
+            1004
+          ],
+          [
+            650,
+            1004
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D2"
+        ],
+        "b": [
+          "JA",
+          "1"
+        ],
+        "net": "NES_D2",
+        "color": "#2177b6",
+        "pts": [
+          [
+            990,
+            620
+          ],
+          [
+            1240,
+            620
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D3"
+        ],
+        "b": [
+          "JA",
+          "2"
+        ],
+        "net": "NES_D3",
+        "color": "#2177b6",
+        "pts": [
+          [
+            990,
+            644
+          ],
+          [
+            1240,
+            644
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D4"
+        ],
+        "b": [
+          "JA",
+          "3"
+        ],
+        "net": "NES_D4",
+        "color": "#2177b6",
+        "pts": [
+          [
+            990,
+            668
+          ],
+          [
+            1240,
+            668
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D5"
+        ],
+        "b": [
+          "JA",
+          "7"
+        ],
+        "net": "NES_D5",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            990,
+            692
+          ],
+          [
+            1240,
+            692
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D6"
+        ],
+        "b": [
+          "JA",
+          "8"
+        ],
+        "net": "NES_D6",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            990,
+            716
+          ],
+          [
+            1240,
+            716
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D7"
+        ],
+        "b": [
+          "JA",
+          "9"
+        ],
+        "net": "NES_D7",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            990,
+            740
+          ],
+          [
+            1240,
+            740
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "gnd2"
+        ],
+        "b": [
+          "JA",
+          "5"
+        ],
+        "net": "GND_JA5",
+        "color": "#445366",
+        "pts": [
+          [
+            990,
+            764
+          ],
+          [
+            1240,
+            764
+          ]
+        ]
+      },
+      {
+        "a": [
+          "JA",
+          "5"
+        ],
+        "b": [
+          "JA",
+          "11"
+        ],
+        "net": "GND_JA11",
+        "color": "#445366",
+        "pts": [
+          [
+            1240,
+            764
+          ],
+          [
+            1190,
+            764
+          ],
+          [
+            1190,
+            788
+          ],
+          [
+            1240,
+            788
+          ]
+        ]
+      },
+      {
+        "a": [
+          "JA",
+          "6"
+        ],
+        "b": [
+          "R6 10 kohm",
+          "1"
+        ],
+        "net": "NES_PULLUP_3V3",
+        "color": "#d08222",
+        "pts": [
+          [
+            1560,
+            620
+          ],
+          [
+            1625,
+            620
+          ],
+          [
+            1625,
+            870
+          ],
+          [
+            1000,
+            870
+          ],
+          [
+            1000,
+            913
+          ],
+          [
+            1030,
+            913
+          ]
+        ]
+      },
+      {
+        "a": [
+          "R6 10 kohm",
+          "1"
+        ],
+        "b": [
+          "R7 10 kohm",
+          "1"
+        ],
+        "net": "NES_PULLUP_RAIL",
+        "color": "#d08222",
+        "pts": [
+          [
+            1030,
+            913
+          ],
+          [
+            1000,
+            913
+          ],
+          [
+            1000,
+            1018
+          ],
+          [
+            1030,
+            1018
+          ]
+        ]
+      },
+      {
+        "a": [
+          "R6 10 kohm",
+          "2"
+        ],
+        "b": [
+          "JA",
+          "3"
+        ],
+        "net": "P1_DATA_PULLUP",
+        "color": "#2177b6",
+        "pts": [
+          [
+            1180,
+            913
+          ],
+          [
+            1190,
+            913
+          ],
+          [
+            1190,
+            668
+          ],
+          [
+            1240,
+            668
+          ]
+        ]
+      },
+      {
+        "a": [
+          "R7 10 kohm",
+          "2"
+        ],
+        "b": [
+          "JA",
+          "9"
+        ],
+        "net": "P2_DATA_PULLUP",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1180,
+            1018
+          ],
+          [
+            1205,
+            1018
+          ],
+          [
+            1205,
+            740
+          ],
+          [
+            1240,
+            740
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "sheet": "03-led-and-hdmi-interfaces",
+    "title": "ARCADE / LED and HDMI electrical interfaces",
+    "items": {
+      "JA": {
+        "part": "ja_led",
+        "pins": {
+          "4": {
+            "id": "connector0",
+            "label": "JA4 / AB18 / LED data",
+            "x": 290,
+            "y": 100,
+            "side": "R"
+          },
+          "5": {
+            "id": "connector1",
+            "label": "JA5 / GND",
+            "x": 290,
+            "y": 124,
+            "side": "R"
+          },
+          "11": {
+            "id": "connector2",
+            "label": "JA11 / GND",
+            "x": 290,
+            "y": 148,
+            "side": "R"
+          }
+        },
+        "index": 100
+      },
+      "LED power": {
+        "part": "led_power",
+        "pins": {
+          "5": {
+            "id": "connector0",
+            "label": "+5 V LED",
+            "x": 280,
+            "y": 100,
+            "side": "R"
+          },
+          "gnd": {
+            "id": "connector1",
+            "label": "GND",
+            "x": 280,
+            "y": 124,
+            "side": "R"
+          }
+        },
+        "index": 110
+      },
+      "U1": {
+        "part": "hct245",
+        "pins": {
+          "1": {
+            "id": "connector0",
+            "label": "1 DIR / tie +5 V",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "2": {
+            "id": "connector1",
+            "label": "2 A1 / LED data IN",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "3": {
+            "id": "connector2",
+            "label": "3 A2 / GND",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "4": {
+            "id": "connector3",
+            "label": "4 A3 / GND",
+            "x": 0,
+            "y": 172,
+            "side": "L"
+          },
+          "5": {
+            "id": "connector4",
+            "label": "5 A4 / GND",
+            "x": 0,
+            "y": 196,
+            "side": "L"
+          },
+          "6": {
+            "id": "connector5",
+            "label": "6 A5 / GND",
+            "x": 0,
+            "y": 220,
+            "side": "L"
+          },
+          "7": {
+            "id": "connector6",
+            "label": "7 A6 / GND",
+            "x": 0,
+            "y": 244,
+            "side": "L"
+          },
+          "8": {
+            "id": "connector7",
+            "label": "8 A7 / GND",
+            "x": 0,
+            "y": 268,
+            "side": "L"
+          },
+          "9": {
+            "id": "connector8",
+            "label": "9 A8 / GND",
+            "x": 0,
+            "y": 292,
+            "side": "L"
+          },
+          "10": {
+            "id": "connector9",
+            "label": "10 GND",
+            "x": 0,
+            "y": 316,
+            "side": "L"
+          },
+          "20": {
+            "id": "connector10",
+            "label": "20 VCC / +5 V LED",
+            "x": 330,
+            "y": 100,
+            "side": "R"
+          },
+          "19": {
+            "id": "connector11",
+            "label": "19 /OE / GND",
+            "x": 330,
+            "y": 124,
+            "side": "R"
+          },
+          "18": {
+            "id": "connector12",
+            "label": "18 B1 / 5 V data OUT",
+            "x": 330,
+            "y": 148,
+            "side": "R"
+          },
+          "17": {
+            "id": "connector13",
+            "label": "17 B2 / NC",
+            "x": 330,
+            "y": 172,
+            "side": "R"
+          },
+          "16": {
+            "id": "connector14",
+            "label": "16 B3 / NC",
+            "x": 330,
+            "y": 196,
+            "side": "R"
+          },
+          "15": {
+            "id": "connector15",
+            "label": "15 B4 / NC",
+            "x": 330,
+            "y": 220,
+            "side": "R"
+          },
+          "14": {
+            "id": "connector16",
+            "label": "14 B5 / NC",
+            "x": 330,
+            "y": 244,
+            "side": "R"
+          },
+          "13": {
+            "id": "connector17",
+            "label": "13 B6 / NC",
+            "x": 330,
+            "y": 268,
+            "side": "R"
+          },
+          "12": {
+            "id": "connector18",
+            "label": "12 B7 / NC",
+            "x": 330,
+            "y": 292,
+            "side": "R"
+          },
+          "11": {
+            "id": "connector19",
+            "label": "11 B8 / NC",
+            "x": 330,
+            "y": 316,
+            "side": "R"
+          }
+        },
+        "index": 120
+      },
+      "R1 330 ohm": {
+        "part": "resistor",
+        "pins": {
+          "1": {
+            "id": "connector0",
+            "label": "1",
+            "x": 0,
+            "y": 53,
+            "side": "L"
+          },
+          "2": {
+            "id": "connector1",
+            "label": "2",
+            "x": 150,
+            "y": 53,
+            "side": "R"
+          }
+        },
+        "index": 130
+      },
+      "LED1": {
+        "part": "sk6812",
+        "pins": {
+          "5": {
+            "id": "connector0",
+            "label": "+5 V",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "din": {
+            "id": "connector1",
+            "label": "DIN",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector2",
+            "label": "GND",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "dout": {
+            "id": "connector3",
+            "label": "DOUT",
+            "x": 220,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 140
+      },
+      "LED2": {
+        "part": "sk6812",
+        "pins": {
+          "5": {
+            "id": "connector0",
+            "label": "+5 V",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "din": {
+            "id": "connector1",
+            "label": "DIN",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector2",
+            "label": "GND",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "dout": {
+            "id": "connector3",
+            "label": "DOUT",
+            "x": 220,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 150
+      },
+      "LED3": {
+        "part": "sk6812",
+        "pins": {
+          "5": {
+            "id": "connector0",
+            "label": "+5 V",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "din": {
+            "id": "connector1",
+            "label": "DIN",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector2",
+            "label": "GND",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "dout": {
+            "id": "connector3",
+            "label": "DOUT",
+            "x": 220,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 160
+      },
+      "LED4 optional": {
+        "part": "sk6812",
+        "pins": {
+          "5": {
+            "id": "connector0",
+            "label": "+5 V",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "din": {
+            "id": "connector1",
+            "label": "DIN",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector2",
+            "label": "GND",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "dout": {
+            "id": "connector3",
+            "label": "DOUT",
+            "x": 220,
+            "y": 100,
+            "side": "R"
+          }
+        },
+        "index": 170
+      },
+      "C1 100 nF": {
+        "part": "capacitor",
+        "pins": {
+          "p": {
+            "id": "connector0",
+            "label": "+ / rail",
+            "x": 0,
+            "y": 53,
+            "side": "L"
+          },
+          "n": {
+            "id": "connector1",
+            "label": "- / GND",
+            "x": 150,
+            "y": 53,
+            "side": "R"
+          }
+        },
+        "index": 180
+      },
+      "C3 1000 uF 10 V": {
+        "part": "electrolytic",
+        "pins": {
+          "p": {
+            "id": "connector0",
+            "label": "+ / rail",
+            "x": 0,
+            "y": 53,
+            "side": "L"
+          },
+          "n": {
+            "id": "connector1",
+            "label": "- / GND",
+            "x": 150,
+            "y": 53,
+            "side": "R"
+          }
+        },
+        "index": 190
+      },
+      "R4 10 kohm": {
+        "part": "resistor",
+        "pins": {
+          "1": {
+            "id": "connector0",
+            "label": "1",
+            "x": 0,
+            "y": 53,
+            "side": "L"
+          },
+          "2": {
+            "id": "connector1",
+            "label": "2",
+            "x": 150,
+            "y": 53,
+            "side": "R"
+          }
+        },
+        "index": 200
+      },
+      "LED notes": {
+        "part": "led_notes",
+        "pins": {},
+        "index": 210
+      },
+      "Due": {
+        "part": "due_interface",
+        "pins": {
+          "3v3": {
+            "id": "connector0",
+            "label": "3.3 V for U2 only",
+            "x": 310,
+            "y": 100,
+            "side": "R"
+          },
+          "gnd": {
+            "id": "connector1",
+            "label": "GND",
+            "x": 310,
+            "y": 124,
+            "side": "R"
+          },
+          "D8": {
+            "id": "connector2",
+            "label": "D8 / status INPUT",
+            "x": 310,
+            "y": 148,
+            "side": "R"
+          }
+        },
+        "index": 220
+      },
+      "U2": {
+        "part": "lvc245",
+        "pins": {
+          "1": {
+            "id": "connector0",
+            "label": "1 DIR / tie Due 3.3 V",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "2": {
+            "id": "connector1",
+            "label": "2 A1 / status 5 V IN",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "3": {
+            "id": "connector2",
+            "label": "3 A2 / GND",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          },
+          "4": {
+            "id": "connector3",
+            "label": "4 A3 / GND",
+            "x": 0,
+            "y": 172,
+            "side": "L"
+          },
+          "5": {
+            "id": "connector4",
+            "label": "5 A4 / GND",
+            "x": 0,
+            "y": 196,
+            "side": "L"
+          },
+          "6": {
+            "id": "connector5",
+            "label": "6 A5 / GND",
+            "x": 0,
+            "y": 220,
+            "side": "L"
+          },
+          "7": {
+            "id": "connector6",
+            "label": "7 A6 / GND",
+            "x": 0,
+            "y": 244,
+            "side": "L"
+          },
+          "8": {
+            "id": "connector7",
+            "label": "8 A7 / GND",
+            "x": 0,
+            "y": 268,
+            "side": "L"
+          },
+          "9": {
+            "id": "connector8",
+            "label": "9 A8 / GND",
+            "x": 0,
+            "y": 292,
+            "side": "L"
+          },
+          "10": {
+            "id": "connector9",
+            "label": "10 GND",
+            "x": 0,
+            "y": 316,
+            "side": "L"
+          },
+          "20": {
+            "id": "connector10",
+            "label": "20 VCC / Due 3.3 V",
+            "x": 350,
+            "y": 100,
+            "side": "R"
+          },
+          "19": {
+            "id": "connector11",
+            "label": "19 /OE / GND",
+            "x": 350,
+            "y": 124,
+            "side": "R"
+          },
+          "18": {
+            "id": "connector12",
+            "label": "18 B1 / 3.3 V OUT",
+            "x": 350,
+            "y": 148,
+            "side": "R"
+          },
+          "17": {
+            "id": "connector13",
+            "label": "17 B2 / NC",
+            "x": 350,
+            "y": 172,
+            "side": "R"
+          },
+          "16": {
+            "id": "connector14",
+            "label": "16 B3 / NC",
+            "x": 350,
+            "y": 196,
+            "side": "R"
+          },
+          "15": {
+            "id": "connector15",
+            "label": "15 B4 / NC",
+            "x": 350,
+            "y": 220,
+            "side": "R"
+          },
+          "14": {
+            "id": "connector16",
+            "label": "14 B5 / NC",
+            "x": 350,
+            "y": 244,
+            "side": "R"
+          },
+          "13": {
+            "id": "connector17",
+            "label": "13 B6 / NC",
+            "x": 350,
+            "y": 268,
+            "side": "R"
+          },
+          "12": {
+            "id": "connector18",
+            "label": "12 B7 / NC",
+            "x": 350,
+            "y": 292,
+            "side": "R"
+          },
+          "11": {
+            "id": "connector19",
+            "label": "11 B8 / NC",
+            "x": 350,
+            "y": 316,
+            "side": "R"
+          }
+        },
+        "index": 230
+      },
+      "HDMI switch": {
+        "part": "hdmi_mods",
+        "pins": {
+          "status": {
+            "id": "connector0",
+            "label": "STATUS_5V / measured logic",
+            "x": 0,
+            "y": 100,
+            "side": "L"
+          },
+          "toggle": {
+            "id": "connector1",
+            "label": "TOGGLE_N / active low",
+            "x": 0,
+            "y": 124,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector2",
+            "label": "GND / switch logic return",
+            "x": 0,
+            "y": 148,
+            "side": "L"
+          }
+        },
+        "index": 240
+      },
+      "Silver button": {
+        "part": "silver_button",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO / normally open",
+            "x": 320,
+            "y": 100,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM / switch ground",
+            "x": 320,
+            "y": 124,
+            "side": "R"
+          }
+        },
+        "index": 250
+      },
+      "C2 100 nF": {
+        "part": "capacitor",
+        "pins": {
+          "p": {
+            "id": "connector0",
+            "label": "+ / rail",
+            "x": 0,
+            "y": 53,
+            "side": "L"
+          },
+          "n": {
+            "id": "connector1",
+            "label": "- / GND",
+            "x": 150,
+            "y": 53,
+            "side": "R"
+          }
+        },
+        "index": 260
+      },
+      "R5 100 kohm": {
+        "part": "resistor",
+        "pins": {
+          "1": {
+            "id": "connector0",
+            "label": "1",
+            "x": 0,
+            "y": 53,
+            "side": "L"
+          },
+          "2": {
+            "id": "connector1",
+            "label": "2",
+            "x": 150,
+            "y": 53,
+            "side": "R"
+          }
+        },
+        "index": 270
+      },
+      "HDMI notes": {
+        "part": "hdmi_notes",
+        "pins": {},
+        "index": 280
+      }
+    },
+    "wires": [
+      {
+        "a": [
+          "JA",
+          "4"
+        ],
+        "b": [
+          "U1",
+          "2"
+        ],
+        "net": "LED_DATA_3V3",
+        "color": "#18977d",
+        "pts": [
+          [
+            325,
+            240
+          ],
+          [
+            325,
+            240
+          ],
+          [
+            325,
+            264
+          ],
+          [
+            580,
+            264
+          ]
+        ]
+      },
+      {
+        "a": [
+          "JA",
+          "4"
+        ],
+        "b": [
+          "R4 10 kohm",
+          "1"
+        ],
+        "net": "LED_IDLE_PULLDOWN",
+        "color": "#18977d",
+        "pts": [
+          [
+            325,
+            240
+          ],
+          [
+            325,
+            240
+          ],
+          [
+            325,
+            343
+          ],
+          [
+            350,
+            343
+          ]
+        ]
+      },
+      {
+        "a": [
+          "R4 10 kohm",
+          "2"
+        ],
+        "b": [
+          "U1",
+          "10"
+        ],
+        "net": "LED_PULLDOWN_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            500,
+            343
+          ],
+          [
+            530,
+            343
+          ],
+          [
+            530,
+            456
+          ],
+          [
+            580,
+            456
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "18"
+        ],
+        "b": [
+          "R1 330 ohm",
+          "1"
+        ],
+        "net": "LED_DATA_5V",
+        "color": "#18977d",
+        "pts": [
+          [
+            910,
+            288
+          ],
+          [
+            960,
+            288
+          ],
+          [
+            1030,
+            288
+          ]
+        ]
+      },
+      {
+        "a": [
+          "R1 330 ohm",
+          "2"
+        ],
+        "b": [
+          "LED1",
+          "din"
+        ],
+        "net": "LED_DIN",
+        "color": "#18977d",
+        "pts": [
+          [
+            1180,
+            288
+          ],
+          [
+            1210,
+            288
+          ],
+          [
+            1210,
+            264
+          ],
+          [
+            1250,
+            264
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED1",
+          "dout"
+        ],
+        "b": [
+          "LED2",
+          "din"
+        ],
+        "net": "LED_CHAIN_1",
+        "color": "#18977d",
+        "pts": [
+          [
+            1470,
+            240
+          ],
+          [
+            1490,
+            240
+          ],
+          [
+            1490,
+            264
+          ],
+          [
+            1510,
+            264
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED2",
+          "dout"
+        ],
+        "b": [
+          "LED3",
+          "din"
+        ],
+        "net": "LED_CHAIN_2",
+        "color": "#18977d",
+        "pts": [
+          [
+            1730,
+            240
+          ],
+          [
+            1750,
+            240
+          ],
+          [
+            1750,
+            264
+          ],
+          [
+            1770,
+            264
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED3",
+          "dout"
+        ],
+        "b": [
+          "LED4 optional",
+          "din"
+        ],
+        "net": "LED_CHAIN_3",
+        "color": "#18977d",
+        "pts": [
+          [
+            1990,
+            240
+          ],
+          [
+            2010,
+            240
+          ],
+          [
+            2010,
+            410
+          ],
+          [
+            1730,
+            410
+          ],
+          [
+            1730,
+            564
+          ],
+          [
+            1770,
+            564
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "U1",
+          "20"
+        ],
+        "net": "LED_5V",
+        "color": "#d43c38",
+        "pts": [
+          [
+            315,
+            530
+          ],
+          [
+            520,
+            530
+          ],
+          [
+            520,
+            110
+          ],
+          [
+            1000,
+            110
+          ],
+          [
+            1000,
+            240
+          ],
+          [
+            910,
+            240
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "U1",
+          "1"
+        ],
+        "net": "HCT_DIR_HIGH",
+        "color": "#d43c38",
+        "pts": [
+          [
+            315,
+            530
+          ],
+          [
+            520,
+            530
+          ],
+          [
+            520,
+            240
+          ],
+          [
+            580,
+            240
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "gnd"
+        ],
+        "b": [
+          "JA",
+          "5"
+        ],
+        "net": "COMMON_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            264
+          ],
+          [
+            325,
+            264
+          ]
+        ]
+      },
+      {
+        "a": [
+          "JA",
+          "11"
+        ],
+        "b": [
+          "JA",
+          "5"
+        ],
+        "net": "JA_GROUNDS",
+        "color": "#445366",
+        "pts": [
+          [
+            325,
+            288
+          ],
+          [
+            310,
+            288
+          ],
+          [
+            310,
+            264
+          ],
+          [
+            325,
+            264
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "LED1",
+          "5"
+        ],
+        "net": "LED1_5V",
+        "color": "#d43c38",
+        "pts": [
+          [
+            315,
+            530
+          ],
+          [
+            520,
+            530
+          ],
+          [
+            520,
+            110
+          ],
+          [
+            1235,
+            110
+          ],
+          [
+            1235,
+            240
+          ],
+          [
+            1250,
+            240
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "gnd"
+        ],
+        "b": [
+          "LED1",
+          "gnd"
+        ],
+        "net": "LED1_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            1225,
+            680
+          ],
+          [
+            1225,
+            288
+          ],
+          [
+            1250,
+            288
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "LED2",
+          "5"
+        ],
+        "net": "LED2_5V",
+        "color": "#d43c38",
+        "pts": [
+          [
+            315,
+            530
+          ],
+          [
+            520,
+            530
+          ],
+          [
+            520,
+            110
+          ],
+          [
+            1495,
+            110
+          ],
+          [
+            1495,
+            240
+          ],
+          [
+            1510,
+            240
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "gnd"
+        ],
+        "b": [
+          "LED2",
+          "gnd"
+        ],
+        "net": "LED2_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            1485,
+            680
+          ],
+          [
+            1485,
+            288
+          ],
+          [
+            1510,
+            288
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "LED3",
+          "5"
+        ],
+        "net": "LED3_5V",
+        "color": "#d43c38",
+        "pts": [
+          [
+            315,
+            530
+          ],
+          [
+            520,
+            530
+          ],
+          [
+            520,
+            110
+          ],
+          [
+            1755,
+            110
+          ],
+          [
+            1755,
+            240
+          ],
+          [
+            1770,
+            240
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "gnd"
+        ],
+        "b": [
+          "LED3",
+          "gnd"
+        ],
+        "net": "LED3_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            1745,
+            680
+          ],
+          [
+            1745,
+            288
+          ],
+          [
+            1770,
+            288
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "LED4 optional",
+          "5"
+        ],
+        "net": "LED4_5V",
+        "color": "#d43c38",
+        "pts": [
+          [
+            315,
+            530
+          ],
+          [
+            520,
+            530
+          ],
+          [
+            520,
+            110
+          ],
+          [
+            1755,
+            110
+          ],
+          [
+            1755,
+            540
+          ],
+          [
+            1770,
+            540
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "gnd"
+        ],
+        "b": [
+          "LED4 optional",
+          "gnd"
+        ],
+        "net": "LED4_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            1745,
+            680
+          ],
+          [
+            1745,
+            588
+          ],
+          [
+            1770,
+            588
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "3"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_3",
+        "color": "#445366",
+        "pts": [
+          [
+            580,
+            288
+          ],
+          [
+            555,
+            288
+          ],
+          [
+            555,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "4"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_4",
+        "color": "#445366",
+        "pts": [
+          [
+            580,
+            312
+          ],
+          [
+            555,
+            312
+          ],
+          [
+            555,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "5"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_5",
+        "color": "#445366",
+        "pts": [
+          [
+            580,
+            336
+          ],
+          [
+            555,
+            336
+          ],
+          [
+            555,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "6"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_6",
+        "color": "#445366",
+        "pts": [
+          [
+            580,
+            360
+          ],
+          [
+            555,
+            360
+          ],
+          [
+            555,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "7"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_7",
+        "color": "#445366",
+        "pts": [
+          [
+            580,
+            384
+          ],
+          [
+            555,
+            384
+          ],
+          [
+            555,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "8"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_8",
+        "color": "#445366",
+        "pts": [
+          [
+            580,
+            408
+          ],
+          [
+            555,
+            408
+          ],
+          [
+            555,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "9"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_9",
+        "color": "#445366",
+        "pts": [
+          [
+            580,
+            432
+          ],
+          [
+            555,
+            432
+          ],
+          [
+            555,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "10"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_10",
+        "color": "#445366",
+        "pts": [
+          [
+            580,
+            456
+          ],
+          [
+            555,
+            456
+          ],
+          [
+            555,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U1",
+          "19"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "U1_GND_19",
+        "color": "#445366",
+        "pts": [
+          [
+            910,
+            264
+          ],
+          [
+            940,
+            264
+          ],
+          [
+            940,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "C1 100 nF",
+          "p"
+        ],
+        "net": "C1 100 nF_5V",
+        "color": "#d43c38",
+        "pts": [
+          [
+            315,
+            530
+          ],
+          [
+            330,
+            530
+          ],
+          [
+            330,
+            528
+          ],
+          [
+            350,
+            528
+          ]
+        ]
+      },
+      {
+        "a": [
+          "C1 100 nF",
+          "n"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "C1 100 nF_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            500,
+            528
+          ],
+          [
+            515,
+            528
+          ],
+          [
+            515,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "C3 1000 uF 10 V",
+          "p"
+        ],
+        "net": "C3 1000 uF 10 V_5V",
+        "color": "#d43c38",
+        "pts": [
+          [
+            315,
+            530
+          ],
+          [
+            330,
+            530
+          ],
+          [
+            330,
+            633
+          ],
+          [
+            350,
+            633
+          ]
+        ]
+      },
+      {
+        "a": [
+          "C3 1000 uF 10 V",
+          "n"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "C3 1000 uF 10 V_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            500,
+            633
+          ],
+          [
+            515,
+            633
+          ],
+          [
+            515,
+            680
+          ],
+          [
+            315,
+            680
+          ],
+          [
+            315,
+            554
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "3v3"
+        ],
+        "b": [
+          "U2",
+          "20"
+        ],
+        "net": "DUE_3V3",
+        "color": "#d08222",
+        "pts": [
+          [
+            345,
+            990
+          ],
+          [
+            490,
+            990
+          ],
+          [
+            490,
+            850
+          ],
+          [
+            1010,
+            850
+          ],
+          [
+            1010,
+            990
+          ],
+          [
+            940,
+            990
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "3v3"
+        ],
+        "b": [
+          "U2",
+          "1"
+        ],
+        "net": "LVC_DIR_HIGH",
+        "color": "#d08222",
+        "pts": [
+          [
+            345,
+            990
+          ],
+          [
+            590,
+            990
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "gnd"
+        ],
+        "b": [
+          "LED power",
+          "gnd"
+        ],
+        "net": "SYSTEM_COMMON_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            345,
+            1014
+          ],
+          [
+            355,
+            1014
+          ],
+          [
+            355,
+            780
+          ],
+          [
+            15,
+            780
+          ],
+          [
+            15,
+            700
+          ],
+          [
+            315,
+            700
+          ],
+          [
+            315,
+            554
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "gnd"
+        ],
+        "b": [
+          "U2",
+          "10"
+        ],
+        "net": "U2_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            345,
+            1014
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            470,
+            1240
+          ],
+          [
+            560,
+            1240
+          ],
+          [
+            560,
+            1206
+          ],
+          [
+            590,
+            1206
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "3"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "U2_GND_3",
+        "color": "#445366",
+        "pts": [
+          [
+            590,
+            1038
+          ],
+          [
+            565,
+            1038
+          ],
+          [
+            565,
+            1270
+          ],
+          [
+            470,
+            1270
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "4"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "U2_GND_4",
+        "color": "#445366",
+        "pts": [
+          [
+            590,
+            1062
+          ],
+          [
+            565,
+            1062
+          ],
+          [
+            565,
+            1270
+          ],
+          [
+            470,
+            1270
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "5"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "U2_GND_5",
+        "color": "#445366",
+        "pts": [
+          [
+            590,
+            1086
+          ],
+          [
+            565,
+            1086
+          ],
+          [
+            565,
+            1270
+          ],
+          [
+            470,
+            1270
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "6"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "U2_GND_6",
+        "color": "#445366",
+        "pts": [
+          [
+            590,
+            1110
+          ],
+          [
+            565,
+            1110
+          ],
+          [
+            565,
+            1270
+          ],
+          [
+            470,
+            1270
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "7"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "U2_GND_7",
+        "color": "#445366",
+        "pts": [
+          [
+            590,
+            1134
+          ],
+          [
+            565,
+            1134
+          ],
+          [
+            565,
+            1270
+          ],
+          [
+            470,
+            1270
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "8"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "U2_GND_8",
+        "color": "#445366",
+        "pts": [
+          [
+            590,
+            1158
+          ],
+          [
+            565,
+            1158
+          ],
+          [
+            565,
+            1270
+          ],
+          [
+            470,
+            1270
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "9"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "U2_GND_9",
+        "color": "#445366",
+        "pts": [
+          [
+            590,
+            1182
+          ],
+          [
+            565,
+            1182
+          ],
+          [
+            565,
+            1270
+          ],
+          [
+            470,
+            1270
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "19"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "U2_GND_19",
+        "color": "#445366",
+        "pts": [
+          [
+            940,
+            1014
+          ],
+          [
+            965,
+            1014
+          ],
+          [
+            965,
+            1270
+          ],
+          [
+            470,
+            1270
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "HDMI switch",
+          "status"
+        ],
+        "b": [
+          "U2",
+          "2"
+        ],
+        "net": "HDMI_STATUS_5V",
+        "color": "#bc5d19",
+        "pts": [
+          [
+            1550,
+            1150
+          ],
+          [
+            1490,
+            1150
+          ],
+          [
+            1490,
+            825
+          ],
+          [
+            540,
+            825
+          ],
+          [
+            540,
+            1014
+          ],
+          [
+            590,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "U2",
+          "18"
+        ],
+        "b": [
+          "Due",
+          "D8"
+        ],
+        "net": "HDMI_STATUS_3V3",
+        "color": "#bc5d19",
+        "pts": [
+          [
+            940,
+            1038
+          ],
+          [
+            990,
+            1038
+          ],
+          [
+            990,
+            810
+          ],
+          [
+            455,
+            810
+          ],
+          [
+            455,
+            1038
+          ],
+          [
+            345,
+            1038
+          ]
+        ]
+      },
+      {
+        "a": [
+          "HDMI switch",
+          "gnd"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "HDMI_COMMON_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1550,
+            1198
+          ],
+          [
+            1510,
+            1198
+          ],
+          [
+            1510,
+            1600
+          ],
+          [
+            470,
+            1600
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "3v3"
+        ],
+        "b": [
+          "C2 100 nF",
+          "p"
+        ],
+        "net": "C2_3V3",
+        "color": "#d08222",
+        "pts": [
+          [
+            345,
+            990
+          ],
+          [
+            490,
+            990
+          ],
+          [
+            490,
+            850
+          ],
+          [
+            1050,
+            850
+          ],
+          [
+            1050,
+            1058
+          ],
+          [
+            1080,
+            1058
+          ]
+        ]
+      },
+      {
+        "a": [
+          "C2 100 nF",
+          "n"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "C2_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1230,
+            1058
+          ],
+          [
+            1240,
+            1058
+          ],
+          [
+            1240,
+            1600
+          ],
+          [
+            470,
+            1600
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "HDMI switch",
+          "status"
+        ],
+        "b": [
+          "R5 100 kohm",
+          "2"
+        ],
+        "net": "STATUS_PULLDOWN_5V",
+        "color": "#bc5d19",
+        "pts": [
+          [
+            1550,
+            1150
+          ],
+          [
+            1490,
+            1150
+          ],
+          [
+            1490,
+            1163
+          ],
+          [
+            1400,
+            1163
+          ]
+        ]
+      },
+      {
+        "a": [
+          "R5 100 kohm",
+          "1"
+        ],
+        "b": [
+          "Due",
+          "gnd"
+        ],
+        "net": "STATUS_PULLDOWN_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1250,
+            1163
+          ],
+          [
+            1230,
+            1163
+          ],
+          [
+            1230,
+            1600
+          ],
+          [
+            470,
+            1600
+          ],
+          [
+            470,
+            1014
+          ],
+          [
+            345,
+            1014
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Silver button",
+          "NO"
+        ],
+        "b": [
+          "HDMI switch",
+          "toggle"
+        ],
+        "net": "MANUAL_HDMI_TOGGLE",
+        "color": "#b65078",
+        "pts": [
+          [
+            1870,
+            1430
+          ],
+          [
+            1960,
+            1430
+          ],
+          [
+            1960,
+            1300
+          ],
+          [
+            1525,
+            1300
+          ],
+          [
+            1525,
+            1174
+          ],
+          [
+            1550,
+            1174
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Silver button",
+          "COM"
+        ],
+        "b": [
+          "HDMI switch",
+          "gnd"
+        ],
+        "net": "MANUAL_HDMI_RETURN",
+        "color": "#445366",
+        "pts": [
+          [
+            1870,
+            1454
+          ],
+          [
+            1975,
+            1454
+          ],
+          [
+            1975,
+            1280
+          ],
+          [
+            1510,
+            1280
+          ],
+          [
+            1510,
+            1198
+          ],
+          [
+            1550,
+            1198
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "sheet": "04-realistic-breadboard",
+    "title": "ARCADE / Physical wiring view",
+    "items": {
+      "Monitor": {
+        "part": "real_monitor",
+        "pins": {
+          "hdmi": {
+            "id": "connector0",
+            "label": "HDMI",
+            "x": 300,
+            "y": 340,
+            "side": "B"
+          }
+        },
+        "index": 100
+      },
+      "Pi": {
+        "part": "real_pi",
+        "pins": {
+          "usb_due": {
+            "id": "connector0",
+            "label": "USB host / Due",
+            "x": 500,
+            "y": 255,
+            "side": "R"
+          },
+          "usb_jtag": {
+            "id": "connector1",
+            "label": "USB host / JTAG",
+            "x": 500,
+            "y": 298,
+            "side": "R"
+          },
+          "hdmi": {
+            "id": "connector2",
+            "label": "HDMI",
+            "x": 155,
+            "y": 324.46654068421077,
+            "side": "B"
+          }
+        },
+        "index": 110
+      },
+      "HDMI switch": {
+        "part": "real_hdmi",
+        "pins": {
+          "in1": {
+            "id": "connector0",
+            "label": "HDMI 1",
+            "x": 0,
+            "y": 57,
+            "side": "L"
+          },
+          "in2": {
+            "id": "connector1",
+            "label": "HDMI 2",
+            "x": 0,
+            "y": 126,
+            "side": "L"
+          },
+          "out": {
+            "id": "connector2",
+            "label": "HDMI out",
+            "x": 400,
+            "y": 90,
+            "side": "R"
+          },
+          "status": {
+            "id": "connector3",
+            "label": "STATUS 5V",
+            "x": 170,
+            "y": 180,
+            "side": "B"
+          },
+          "toggle": {
+            "id": "connector4",
+            "label": "Button NO",
+            "x": 240,
+            "y": 180,
+            "side": "B"
+          },
+          "gnd": {
+            "id": "connector5",
+            "label": "Switch GND",
+            "x": 310,
+            "y": 180,
+            "side": "B"
+          }
+        },
+        "index": 120
+      },
+      "FPGA": {
+        "part": "real_nexys",
+        "pins": {
+          "6": {
+            "id": "connector0",
+            "label": "JA6",
+            "x": 650,
+            "y": 531,
+            "side": "R"
+          },
+          "5": {
+            "id": "connector1",
+            "label": "JA5",
+            "x": 650,
+            "y": 554,
+            "side": "R"
+          },
+          "4": {
+            "id": "connector2",
+            "label": "JA4",
+            "x": 650,
+            "y": 577,
+            "side": "R"
+          },
+          "3": {
+            "id": "connector3",
+            "label": "JA3",
+            "x": 650,
+            "y": 600,
+            "side": "R"
+          },
+          "2": {
+            "id": "connector4",
+            "label": "JA2",
+            "x": 650,
+            "y": 623,
+            "side": "R"
+          },
+          "1": {
+            "id": "connector5",
+            "label": "JA1",
+            "x": 650,
+            "y": 646,
+            "side": "R"
+          },
+          "11": {
+            "id": "connector6",
+            "label": "JA11",
+            "x": 677,
+            "y": 554,
+            "side": "R"
+          },
+          "9": {
+            "id": "connector7",
+            "label": "JA9",
+            "x": 677,
+            "y": 600,
+            "side": "R"
+          },
+          "8": {
+            "id": "connector8",
+            "label": "JA8",
+            "x": 677,
+            "y": 623,
+            "side": "R"
+          },
+          "7": {
+            "id": "connector9",
+            "label": "JA7",
+            "x": 677,
+            "y": 646,
+            "side": "R"
+          },
+          "hdmi": {
+            "id": "connector10",
+            "label": "HDMI OUT",
+            "x": 204,
+            "y": 0,
+            "side": "T"
+          },
+          "audio": {
+            "id": "connector11",
+            "label": "LINE OUT",
+            "x": 575,
+            "y": 0,
+            "side": "T"
+          },
+          "usb": {
+            "id": "connector12",
+            "label": "USB HOST",
+            "x": 0,
+            "y": 473,
+            "side": "L"
+          },
+          "jtag": {
+            "id": "connector13",
+            "label": "PROG",
+            "x": 0,
+            "y": 640,
+            "side": "L"
+          }
+        },
+        "index": 130
+      },
+      "Speakers": {
+        "part": "real_speakers",
+        "pins": {
+          "audio": {
+            "id": "connector0",
+            "label": "3.5mm stereo",
+            "x": 8,
+            "y": 245,
+            "side": "L"
+          }
+        },
+        "index": 140
+      },
+      "Due": {
+        "part": "real_due",
+        "pins": {
+          "3v3": {
+            "id": "connector0",
+            "label": "3v3",
+            "x": 267.390517775365,
+            "y": 363.54705259040185,
+            "side": "R"
+          },
+          "gnd": {
+            "id": "connector1",
+            "label": "gnd",
+            "x": 303.74531108117026,
+            "y": 363.54705259040185,
+            "side": "R"
+          },
+          "D8": {
+            "id": "connector2",
+            "label": "D8",
+            "x": 311.01626974233125,
+            "y": 18.1774061202967,
+            "side": "R"
+          },
+          "D9": {
+            "id": "connector3",
+            "label": "D9",
+            "x": 292.83887308942866,
+            "y": 18.1774061202967,
+            "side": "R"
+          },
+          "D2": {
+            "id": "connector4",
+            "label": "D2",
+            "x": 430.98708765148854,
+            "y": 18.1774061202967,
+            "side": "R"
+          },
+          "D3": {
+            "id": "connector5",
+            "label": "D3",
+            "x": 412.8115844774039,
+            "y": 18.1774061202967,
+            "side": "R"
+          },
+          "D4": {
+            "id": "connector6",
+            "label": "D4",
+            "x": 394.6322943456833,
+            "y": 18.1774061202967,
+            "side": "R"
+          },
+          "D5": {
+            "id": "connector7",
+            "label": "D5",
+            "x": 376.4548976927807,
+            "y": 18.1774061202967,
+            "side": "R"
+          },
+          "D6": {
+            "id": "connector8",
+            "label": "D6",
+            "x": 358.2775010398781,
+            "y": 18.1774061202967,
+            "side": "R"
+          },
+          "D7": {
+            "id": "connector9",
+            "label": "D7",
+            "x": 340.1001043869755,
+            "y": 18.1774061202967,
+            "side": "R"
+          },
+          "D22": {
+            "id": "connector10",
+            "label": "D22",
+            "x": 685.4727804231894,
+            "y": 36.35472703404659,
+            "side": "R"
+          },
+          "D23": {
+            "id": "connector11",
+            "label": "D23",
+            "x": 703.648283597274,
+            "y": 36.35472703404659,
+            "side": "R"
+          },
+          "D24": {
+            "id": "connector12",
+            "label": "D24",
+            "x": 685.4727804231894,
+            "y": 54.532123686949205,
+            "side": "R"
+          },
+          "D25": {
+            "id": "connector13",
+            "label": "D25",
+            "x": 703.648283597274,
+            "y": 54.532123686949205,
+            "side": "R"
+          },
+          "D26": {
+            "id": "connector14",
+            "label": "D26",
+            "x": 685.4727804231894,
+            "y": 72.7095203398518,
+            "side": "R"
+          },
+          "D27": {
+            "id": "connector15",
+            "label": "D27",
+            "x": 703.648283597274,
+            "y": 72.7095203398518,
+            "side": "R"
+          },
+          "D28": {
+            "id": "connector16",
+            "label": "D28",
+            "x": 685.4727804231894,
+            "y": 90.88691699275441,
+            "side": "R"
+          },
+          "D29": {
+            "id": "connector17",
+            "label": "D29",
+            "x": 703.648283597274,
+            "y": 90.88691699275441,
+            "side": "R"
+          },
+          "D30": {
+            "id": "connector18",
+            "label": "D30",
+            "x": 685.4727804231894,
+            "y": 109.06431364565702,
+            "side": "R"
+          },
+          "D31": {
+            "id": "connector19",
+            "label": "D31",
+            "x": 703.648283597274,
+            "y": 109.06431364565702,
+            "side": "R"
+          },
+          "D32": {
+            "id": "connector20",
+            "label": "D32",
+            "x": 685.4727804231894,
+            "y": 127.24171029855965,
+            "side": "R"
+          },
+          "D33": {
+            "id": "connector21",
+            "label": "D33",
+            "x": 703.648283597274,
+            "y": 127.24171029855965,
+            "side": "R"
+          },
+          "D34": {
+            "id": "connector22",
+            "label": "D34",
+            "x": 685.4727804231894,
+            "y": 145.41910695146225,
+            "side": "R"
+          },
+          "D35": {
+            "id": "connector23",
+            "label": "D35",
+            "x": 703.648283597274,
+            "y": 145.41910695146225,
+            "side": "R"
+          },
+          "D36": {
+            "id": "connector24",
+            "label": "D36",
+            "x": 685.4727804231894,
+            "y": 163.59650360436484,
+            "side": "R"
+          },
+          "D37": {
+            "id": "connector25",
+            "label": "D37",
+            "x": 703.648283597274,
+            "y": 163.59650360436484,
+            "side": "R"
+          },
+          "gnd2": {
+            "id": "connector26",
+            "label": "gnd2",
+            "x": 685.4727804231894,
+            "y": 327.19250543684296,
+            "side": "R"
+          },
+          "usb": {
+            "id": "connector27",
+            "label": "Native USB",
+            "x": 0,
+            "y": 113,
+            "side": "L"
+          }
+        },
+        "index": 150
+      },
+      "Interface": {
+        "part": "real_adapter",
+        "pins": {
+          "led_in": {
+            "id": "connector0",
+            "label": "JA4 LED",
+            "x": 8,
+            "y": 70,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector1",
+            "label": "GND",
+            "x": 8,
+            "y": 115,
+            "side": "L"
+          },
+          "status_out": {
+            "id": "connector2",
+            "label": "D8 status",
+            "x": 8,
+            "y": 165,
+            "side": "L"
+          },
+          "3v3": {
+            "id": "connector3",
+            "label": "Due 3V3",
+            "x": 8,
+            "y": 210,
+            "side": "L"
+          },
+          "fpga3v3": {
+            "id": "connector4",
+            "label": "JA6 3V3",
+            "x": 8,
+            "y": 255,
+            "side": "L"
+          },
+          "data1": {
+            "id": "connector5",
+            "label": "JA3 DATA1",
+            "x": 8,
+            "y": 285,
+            "side": "L"
+          },
+          "data2": {
+            "id": "connector6",
+            "label": "JA9 DATA2",
+            "x": 8,
+            "y": 310,
+            "side": "L"
+          },
+          "led_out": {
+            "id": "connector7",
+            "label": "LED DIN",
+            "x": 612,
+            "y": 70,
+            "side": "R"
+          },
+          "led5": {
+            "id": "connector8",
+            "label": "LED +5V",
+            "x": 612,
+            "y": 115,
+            "side": "R"
+          },
+          "ledgnd": {
+            "id": "connector9",
+            "label": "LED GND",
+            "x": 612,
+            "y": 160,
+            "side": "R"
+          },
+          "status_in": {
+            "id": "connector10",
+            "label": "SW STATUS",
+            "x": 612,
+            "y": 215,
+            "side": "R"
+          },
+          "swgnd": {
+            "id": "connector11",
+            "label": "SW GND",
+            "x": 612,
+            "y": 260,
+            "side": "R"
+          },
+          "5": {
+            "id": "connector12",
+            "label": "5V IN",
+            "x": 540,
+            "y": 8,
+            "side": "T"
+          },
+          "pgnd": {
+            "id": "connector13",
+            "label": "GND",
+            "x": 580,
+            "y": 8,
+            "side": "T"
+          }
+        },
+        "index": 160
+      },
+      "Trackball": {
+        "part": "real_trackball",
+        "pins": {
+          "usb": {
+            "id": "connector0",
+            "label": "USB mouse cable",
+            "x": 0,
+            "y": 256,
+            "side": "L"
+          }
+        },
+        "index": 170
+      },
+      "Pixels": {
+        "part": "real_strip",
+        "pins": {
+          "5": {
+            "id": "connector0",
+            "label": "+5 V",
+            "x": 8,
+            "y": 15,
+            "side": "L"
+          },
+          "din": {
+            "id": "connector1",
+            "label": "DIN",
+            "x": 8,
+            "y": 40,
+            "side": "L"
+          },
+          "gnd": {
+            "id": "connector2",
+            "label": "GND",
+            "x": 8,
+            "y": 65,
+            "side": "L"
+          }
+        },
+        "index": 180
+      },
+      "LED power": {
+        "part": "real_led_supply",
+        "pins": {
+          "5": {
+            "id": "connector0",
+            "label": "5 V",
+            "x": 223,
+            "y": 36,
+            "side": "R"
+          },
+          "gnd": {
+            "id": "connector1",
+            "label": "GND",
+            "x": 223,
+            "y": 80,
+            "side": "R"
+          }
+        },
+        "index": 190
+      },
+      "Silver button": {
+        "part": "real_button_silver",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 200
+      },
+      "P1 joystick": {
+        "part": "real_joystick",
+        "pins": {
+          "UP": {
+            "id": "connector0",
+            "label": "UP",
+            "x": 211,
+            "y": 114,
+            "side": "R"
+          },
+          "DOWN": {
+            "id": "connector1",
+            "label": "DOWN",
+            "x": 211,
+            "y": 134,
+            "side": "R"
+          },
+          "LEFT": {
+            "id": "connector2",
+            "label": "LEFT",
+            "x": 211,
+            "y": 154,
+            "side": "R"
+          },
+          "RIGHT": {
+            "id": "connector3",
+            "label": "RIGHT",
+            "x": 211,
+            "y": 174,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector4",
+            "label": "COM",
+            "x": 211,
+            "y": 194,
+            "side": "R"
+          }
+        },
+        "index": 210
+      },
+      "P1 START": {
+        "part": "real_button_white",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 220
+      },
+      "P1 SELECT": {
+        "part": "real_button_white",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 230
+      },
+      "P1 A": {
+        "part": "real_button_red",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 240
+      },
+      "P1 B": {
+        "part": "real_button_blue",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 250
+      },
+      "P2 joystick": {
+        "part": "real_joystick",
+        "pins": {
+          "UP": {
+            "id": "connector0",
+            "label": "UP",
+            "x": 211,
+            "y": 114,
+            "side": "R"
+          },
+          "DOWN": {
+            "id": "connector1",
+            "label": "DOWN",
+            "x": 211,
+            "y": 134,
+            "side": "R"
+          },
+          "LEFT": {
+            "id": "connector2",
+            "label": "LEFT",
+            "x": 211,
+            "y": 154,
+            "side": "R"
+          },
+          "RIGHT": {
+            "id": "connector3",
+            "label": "RIGHT",
+            "x": 211,
+            "y": 174,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector4",
+            "label": "COM",
+            "x": 211,
+            "y": 194,
+            "side": "R"
+          }
+        },
+        "index": 260
+      },
+      "P2 START": {
+        "part": "real_button_white",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 270
+      },
+      "P2 SELECT": {
+        "part": "real_button_white",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 280
+      },
+      "P2 A": {
+        "part": "real_button_red",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 290
+      },
+      "P2 B": {
+        "part": "real_button_blue",
+        "pins": {
+          "NO": {
+            "id": "connector0",
+            "label": "NO",
+            "x": 120,
+            "y": 108.5,
+            "side": "R"
+          },
+          "COM": {
+            "id": "connector1",
+            "label": "COM",
+            "x": 120,
+            "y": 128.5,
+            "side": "R"
+          }
+        },
+        "index": 300
+      },
+      "Physical view notes": {
+        "part": "realistic_note",
+        "pins": {},
+        "index": 310
+      }
+    },
+    "wires": [
+      {
+        "a": [
+          "P1 A",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D22"
+        ],
+        "net": "P1_A",
+        "color": "#2177b6",
+        "pts": [
+          [
+            450,
+            2028.5
+          ],
+          [
+            655,
+            2028.5
+          ],
+          [
+            655,
+            1530
+          ],
+          [
+            1460,
+            1530
+          ],
+          [
+            1460,
+            1146.3547270340466
+          ],
+          [
+            1385.4727804231893,
+            1146.3547270340466
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 B",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D23"
+        ],
+        "net": "P1_B",
+        "color": "#2177b6",
+        "pts": [
+          [
+            610,
+            2028.5
+          ],
+          [
+            664,
+            2028.5
+          ],
+          [
+            664,
+            1540
+          ],
+          [
+            1469,
+            1540
+          ],
+          [
+            1469,
+            1146.3547270340466
+          ],
+          [
+            1403.648283597274,
+            1146.3547270340466
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 SELECT",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D24"
+        ],
+        "net": "P1_SELECT",
+        "color": "#2177b6",
+        "pts": [
+          [
+            610,
+            1828.5
+          ],
+          [
+            673,
+            1828.5
+          ],
+          [
+            673,
+            1550
+          ],
+          [
+            1478,
+            1550
+          ],
+          [
+            1478,
+            1164.5321236869493
+          ],
+          [
+            1385.4727804231893,
+            1164.5321236869493
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 START",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D25"
+        ],
+        "net": "P1_START",
+        "color": "#2177b6",
+        "pts": [
+          [
+            450,
+            1828.5
+          ],
+          [
+            682,
+            1828.5
+          ],
+          [
+            682,
+            1560
+          ],
+          [
+            1487,
+            1560
+          ],
+          [
+            1487,
+            1164.5321236869493
+          ],
+          [
+            1403.648283597274,
+            1164.5321236869493
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "UP"
+        ],
+        "b": [
+          "Due",
+          "D26"
+        ],
+        "net": "P1_UP",
+        "color": "#2177b6",
+        "pts": [
+          [
+            301,
+            1854
+          ],
+          [
+            691,
+            1854
+          ],
+          [
+            691,
+            1570
+          ],
+          [
+            1496,
+            1570
+          ],
+          [
+            1496,
+            1182.709520339852
+          ],
+          [
+            1385.4727804231893,
+            1182.709520339852
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "DOWN"
+        ],
+        "b": [
+          "Due",
+          "D27"
+        ],
+        "net": "P1_DOWN",
+        "color": "#2177b6",
+        "pts": [
+          [
+            301,
+            1874
+          ],
+          [
+            700,
+            1874
+          ],
+          [
+            700,
+            1580
+          ],
+          [
+            1505,
+            1580
+          ],
+          [
+            1505,
+            1182.709520339852
+          ],
+          [
+            1403.648283597274,
+            1182.709520339852
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "LEFT"
+        ],
+        "b": [
+          "Due",
+          "D28"
+        ],
+        "net": "P1_LEFT",
+        "color": "#2177b6",
+        "pts": [
+          [
+            301,
+            1894
+          ],
+          [
+            709,
+            1894
+          ],
+          [
+            709,
+            1590
+          ],
+          [
+            1514,
+            1590
+          ],
+          [
+            1514,
+            1200.8869169927543
+          ],
+          [
+            1385.4727804231893,
+            1200.8869169927543
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "RIGHT"
+        ],
+        "b": [
+          "Due",
+          "D29"
+        ],
+        "net": "P1_RIGHT",
+        "color": "#2177b6",
+        "pts": [
+          [
+            301,
+            1914
+          ],
+          [
+            718,
+            1914
+          ],
+          [
+            718,
+            1600
+          ],
+          [
+            1523,
+            1600
+          ],
+          [
+            1523,
+            1200.8869169927543
+          ],
+          [
+            1403.648283597274,
+            1200.8869169927543
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 joystick",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P1 joystick_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            301,
+            1934
+          ],
+          [
+            313,
+            1934
+          ],
+          [
+            313,
+            2168
+          ],
+          [
+            1430,
+            2168
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 START",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P1 START_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            450,
+            1848.5
+          ],
+          [
+            462,
+            1848.5
+          ],
+          [
+            462,
+            2168
+          ],
+          [
+            1430,
+            2168
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 SELECT",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P1 SELECT_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            610,
+            1848.5
+          ],
+          [
+            622,
+            1848.5
+          ],
+          [
+            622,
+            2168
+          ],
+          [
+            1430,
+            2168
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 A",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P1 A_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            450,
+            2048.5
+          ],
+          [
+            462,
+            2048.5
+          ],
+          [
+            462,
+            2168
+          ],
+          [
+            1430,
+            2168
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P1 B",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P1 B_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            610,
+            2048.5
+          ],
+          [
+            622,
+            2048.5
+          ],
+          [
+            622,
+            2168
+          ],
+          [
+            1430,
+            2168
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 A",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D30"
+        ],
+        "net": "P2_A",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1160,
+            2028.5
+          ],
+          [
+            1345,
+            2028.5
+          ],
+          [
+            1345,
+            1530
+          ],
+          [
+            1460,
+            1530
+          ],
+          [
+            1460,
+            1219.064313645657
+          ],
+          [
+            1385.4727804231893,
+            1219.064313645657
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 B",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D31"
+        ],
+        "net": "P2_B",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1320,
+            2028.5
+          ],
+          [
+            1354,
+            2028.5
+          ],
+          [
+            1354,
+            1540
+          ],
+          [
+            1469,
+            1540
+          ],
+          [
+            1469,
+            1219.064313645657
+          ],
+          [
+            1403.648283597274,
+            1219.064313645657
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 SELECT",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D32"
+        ],
+        "net": "P2_SELECT",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1320,
+            1828.5
+          ],
+          [
+            1363,
+            1828.5
+          ],
+          [
+            1363,
+            1550
+          ],
+          [
+            1478,
+            1550
+          ],
+          [
+            1478,
+            1237.2417102985596
+          ],
+          [
+            1385.4727804231893,
+            1237.2417102985596
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 START",
+          "NO"
+        ],
+        "b": [
+          "Due",
+          "D33"
+        ],
+        "net": "P2_START",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1160,
+            1828.5
+          ],
+          [
+            1372,
+            1828.5
+          ],
+          [
+            1372,
+            1560
+          ],
+          [
+            1487,
+            1560
+          ],
+          [
+            1487,
+            1237.2417102985596
+          ],
+          [
+            1403.648283597274,
+            1237.2417102985596
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "UP"
+        ],
+        "b": [
+          "Due",
+          "D34"
+        ],
+        "net": "P2_UP",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1011,
+            1854
+          ],
+          [
+            1381,
+            1854
+          ],
+          [
+            1381,
+            1570
+          ],
+          [
+            1496,
+            1570
+          ],
+          [
+            1496,
+            1255.4191069514623
+          ],
+          [
+            1385.4727804231893,
+            1255.4191069514623
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "DOWN"
+        ],
+        "b": [
+          "Due",
+          "D35"
+        ],
+        "net": "P2_DOWN",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1011,
+            1874
+          ],
+          [
+            1390,
+            1874
+          ],
+          [
+            1390,
+            1580
+          ],
+          [
+            1505,
+            1580
+          ],
+          [
+            1505,
+            1255.4191069514623
+          ],
+          [
+            1403.648283597274,
+            1255.4191069514623
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "LEFT"
+        ],
+        "b": [
+          "Due",
+          "D36"
+        ],
+        "net": "P2_LEFT",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1011,
+            1894
+          ],
+          [
+            1399,
+            1894
+          ],
+          [
+            1399,
+            1590
+          ],
+          [
+            1514,
+            1590
+          ],
+          [
+            1514,
+            1273.596503604365
+          ],
+          [
+            1385.4727804231893,
+            1273.596503604365
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "RIGHT"
+        ],
+        "b": [
+          "Due",
+          "D37"
+        ],
+        "net": "P2_RIGHT",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1011,
+            1914
+          ],
+          [
+            1408,
+            1914
+          ],
+          [
+            1408,
+            1600
+          ],
+          [
+            1523,
+            1600
+          ],
+          [
+            1523,
+            1273.596503604365
+          ],
+          [
+            1403.648283597274,
+            1273.596503604365
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 joystick",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P2 joystick_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1011,
+            1934
+          ],
+          [
+            1023,
+            1934
+          ],
+          [
+            1023,
+            2186
+          ],
+          [
+            1430,
+            2186
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 START",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P2 START_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1160,
+            1848.5
+          ],
+          [
+            1172,
+            1848.5
+          ],
+          [
+            1172,
+            2186
+          ],
+          [
+            1430,
+            2186
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 SELECT",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P2 SELECT_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1320,
+            1848.5
+          ],
+          [
+            1332,
+            1848.5
+          ],
+          [
+            1332,
+            2186
+          ],
+          [
+            1430,
+            2186
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 A",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P2 A_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1160,
+            2048.5
+          ],
+          [
+            1172,
+            2048.5
+          ],
+          [
+            1172,
+            2186
+          ],
+          [
+            1430,
+            2186
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "P2 B",
+          "COM"
+        ],
+        "b": [
+          "Due",
+          "gnd2"
+        ],
+        "net": "P2 B_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1320,
+            2048.5
+          ],
+          [
+            1332,
+            2048.5
+          ],
+          [
+            1332,
+            2186
+          ],
+          [
+            1430,
+            2186
+          ],
+          [
+            1430,
+            1437.192505436843
+          ],
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D2"
+        ],
+        "b": [
+          "FPGA",
+          "1"
+        ],
+        "net": "NES_D2",
+        "color": "#2177b6",
+        "pts": [
+          [
+            1130.9870876514885,
+            1128.1774061202966
+          ],
+          [
+            1130.9870876514885,
+            1030
+          ],
+          [
+            1560,
+            1030
+          ],
+          [
+            1560,
+            1230
+          ],
+          [
+            2715,
+            1230
+          ],
+          [
+            2715,
+            1146
+          ],
+          [
+            2600,
+            1146
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D3"
+        ],
+        "b": [
+          "FPGA",
+          "2"
+        ],
+        "net": "NES_D3",
+        "color": "#2177b6",
+        "pts": [
+          [
+            1112.8115844774038,
+            1128.1774061202966
+          ],
+          [
+            1112.8115844774038,
+            1020
+          ],
+          [
+            1570,
+            1020
+          ],
+          [
+            1570,
+            1242
+          ],
+          [
+            2724,
+            1242
+          ],
+          [
+            2724,
+            1123
+          ],
+          [
+            2600,
+            1123
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D4"
+        ],
+        "b": [
+          "FPGA",
+          "3"
+        ],
+        "net": "NES_D4",
+        "color": "#2177b6",
+        "pts": [
+          [
+            1094.6322943456832,
+            1128.1774061202966
+          ],
+          [
+            1094.6322943456832,
+            1010
+          ],
+          [
+            1580,
+            1010
+          ],
+          [
+            1580,
+            1254
+          ],
+          [
+            2733,
+            1254
+          ],
+          [
+            2733,
+            1100
+          ],
+          [
+            2600,
+            1100
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D5"
+        ],
+        "b": [
+          "FPGA",
+          "7"
+        ],
+        "net": "NES_D5",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1076.4548976927808,
+            1128.1774061202966
+          ],
+          [
+            1076.4548976927808,
+            1000
+          ],
+          [
+            1590,
+            1000
+          ],
+          [
+            1590,
+            1266
+          ],
+          [
+            2742,
+            1266
+          ],
+          [
+            2742,
+            1146
+          ],
+          [
+            2627,
+            1146
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D6"
+        ],
+        "b": [
+          "FPGA",
+          "8"
+        ],
+        "net": "NES_D6",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1058.2775010398782,
+            1128.1774061202966
+          ],
+          [
+            1058.2775010398782,
+            990
+          ],
+          [
+            1600,
+            990
+          ],
+          [
+            1600,
+            1278
+          ],
+          [
+            2751,
+            1278
+          ],
+          [
+            2751,
+            1123
+          ],
+          [
+            2627,
+            1123
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D7"
+        ],
+        "b": [
+          "FPGA",
+          "9"
+        ],
+        "net": "NES_D7",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            1040.1001043869755,
+            1128.1774061202966
+          ],
+          [
+            1040.1001043869755,
+            980
+          ],
+          [
+            1610,
+            980
+          ],
+          [
+            1610,
+            1290
+          ],
+          [
+            2760,
+            1290
+          ],
+          [
+            2760,
+            1100
+          ],
+          [
+            2627,
+            1100
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "gnd2"
+        ],
+        "b": [
+          "Interface",
+          "gnd"
+        ],
+        "net": "COMMON_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1385.4727804231893,
+            1437.192505436843
+          ],
+          [
+            1450,
+            1437.192505436843
+          ],
+          [
+            1450,
+            1675
+          ],
+          [
+            1608,
+            1675
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "3v3"
+        ],
+        "b": [
+          "Interface",
+          "3v3"
+        ],
+        "net": "DUE_3V3",
+        "color": "#d08222",
+        "pts": [
+          [
+            967.390517775365,
+            1473.5470525904018
+          ],
+          [
+            967.390517775365,
+            1505
+          ],
+          [
+            1550,
+            1505
+          ],
+          [
+            1550,
+            1770
+          ],
+          [
+            1608,
+            1770
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Due",
+          "D8"
+        ],
+        "b": [
+          "Interface",
+          "status_out"
+        ],
+        "net": "HDMI_STATUS_3V3",
+        "color": "#bc5d19",
+        "pts": [
+          [
+            1011.0162697423312,
+            1128.1774061202966
+          ],
+          [
+            1011.0162697423312,
+            1050
+          ],
+          [
+            1560,
+            1050
+          ],
+          [
+            1560,
+            1725
+          ],
+          [
+            1608,
+            1725
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "4"
+        ],
+        "b": [
+          "Interface",
+          "led_in"
+        ],
+        "net": "JA4_INTERFACE",
+        "color": "#18977d",
+        "pts": [
+          [
+            2600,
+            1077
+          ],
+          [
+            2700,
+            1077
+          ],
+          [
+            2700,
+            1270
+          ],
+          [
+            2290,
+            1270
+          ],
+          [
+            2290,
+            1510
+          ],
+          [
+            1540,
+            1510
+          ],
+          [
+            1540,
+            1630
+          ],
+          [
+            1608,
+            1630
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "5"
+        ],
+        "b": [
+          "Interface",
+          "gnd"
+        ],
+        "net": "JA5_INTERFACE",
+        "color": "#445366",
+        "pts": [
+          [
+            2600,
+            1054
+          ],
+          [
+            2709,
+            1054
+          ],
+          [
+            2709,
+            1285
+          ],
+          [
+            2299,
+            1285
+          ],
+          [
+            2299,
+            1498
+          ],
+          [
+            1531,
+            1498
+          ],
+          [
+            1531,
+            1675
+          ],
+          [
+            1608,
+            1675
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "6"
+        ],
+        "b": [
+          "Interface",
+          "fpga3v3"
+        ],
+        "net": "JA6_INTERFACE",
+        "color": "#d08222",
+        "pts": [
+          [
+            2600,
+            1031
+          ],
+          [
+            2718,
+            1031
+          ],
+          [
+            2718,
+            1300
+          ],
+          [
+            2308,
+            1300
+          ],
+          [
+            2308,
+            1486
+          ],
+          [
+            1522,
+            1486
+          ],
+          [
+            1522,
+            1815
+          ],
+          [
+            1608,
+            1815
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "3"
+        ],
+        "b": [
+          "Interface",
+          "data1"
+        ],
+        "net": "JA3_INTERFACE",
+        "color": "#2177b6",
+        "pts": [
+          [
+            2600,
+            1100
+          ],
+          [
+            2727,
+            1100
+          ],
+          [
+            2727,
+            1315
+          ],
+          [
+            2317,
+            1315
+          ],
+          [
+            2317,
+            1474
+          ],
+          [
+            1513,
+            1474
+          ],
+          [
+            1513,
+            1845
+          ],
+          [
+            1608,
+            1845
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "9"
+        ],
+        "b": [
+          "Interface",
+          "data2"
+        ],
+        "net": "JA9_INTERFACE",
+        "color": "#8a50b4",
+        "pts": [
+          [
+            2627,
+            1100
+          ],
+          [
+            2736,
+            1100
+          ],
+          [
+            2736,
+            1330
+          ],
+          [
+            2326,
+            1330
+          ],
+          [
+            2326,
+            1462
+          ],
+          [
+            1504,
+            1462
+          ],
+          [
+            1504,
+            1870
+          ],
+          [
+            1608,
+            1870
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "11"
+        ],
+        "b": [
+          "Interface",
+          "gnd"
+        ],
+        "net": "JA11_INTERFACE",
+        "color": "#445366",
+        "pts": [
+          [
+            2627,
+            1054
+          ],
+          [
+            2745,
+            1054
+          ],
+          [
+            2745,
+            1345
+          ],
+          [
+            2335,
+            1345
+          ],
+          [
+            2335,
+            1450
+          ],
+          [
+            1495,
+            1450
+          ],
+          [
+            1495,
+            1675
+          ],
+          [
+            1608,
+            1675
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Pi",
+          "usb_due"
+        ],
+        "b": [
+          "Due",
+          "usb"
+        ],
+        "net": "USB_HID",
+        "color": "#336b97",
+        "pts": [
+          [
+            650,
+            875
+          ],
+          [
+            680,
+            875
+          ],
+          [
+            680,
+            1223
+          ],
+          [
+            700,
+            1223
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Pi",
+          "usb_jtag"
+        ],
+        "b": [
+          "FPGA",
+          "jtag"
+        ],
+        "net": "USB_JTAG",
+        "color": "#336b97",
+        "pts": [
+          [
+            650,
+            918
+          ],
+          [
+            670,
+            918
+          ],
+          [
+            670,
+            985
+          ],
+          [
+            1875,
+            985
+          ],
+          [
+            1875,
+            1140
+          ],
+          [
+            1950,
+            1140
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Pi",
+          "hdmi"
+        ],
+        "b": [
+          "HDMI switch",
+          "in1"
+        ],
+        "net": "HDMI_PI",
+        "color": "#6c6caf",
+        "pts": [
+          [
+            305,
+            944.4665406842107
+          ],
+          [
+            305,
+            1000
+          ],
+          [
+            1020,
+            1000
+          ],
+          [
+            1020,
+            757
+          ],
+          [
+            1100,
+            757
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "hdmi"
+        ],
+        "b": [
+          "HDMI switch",
+          "in2"
+        ],
+        "net": "HDMI_FPGA",
+        "color": "#6c6caf",
+        "pts": [
+          [
+            2154,
+            500
+          ],
+          [
+            2154,
+            425
+          ],
+          [
+            1880,
+            425
+          ],
+          [
+            1880,
+            915
+          ],
+          [
+            1045,
+            915
+          ],
+          [
+            1045,
+            826
+          ],
+          [
+            1100,
+            826
+          ]
+        ]
+      },
+      {
+        "a": [
+          "HDMI switch",
+          "out"
+        ],
+        "b": [
+          "Monitor",
+          "hdmi"
+        ],
+        "net": "HDMI_MONITOR",
+        "color": "#6c6caf",
+        "pts": [
+          [
+            1500,
+            790
+          ],
+          [
+            1540,
+            790
+          ],
+          [
+            1540,
+            560
+          ],
+          [
+            1320,
+            560
+          ],
+          [
+            1320,
+            480
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "audio"
+        ],
+        "b": [
+          "Speakers",
+          "audio"
+        ],
+        "net": "STEREO_AUDIO",
+        "color": "#489177",
+        "pts": [
+          [
+            2525,
+            500
+          ],
+          [
+            2525,
+            410
+          ],
+          [
+            2420,
+            410
+          ],
+          [
+            2420,
+            345
+          ],
+          [
+            2458,
+            345
+          ]
+        ]
+      },
+      {
+        "a": [
+          "FPGA",
+          "usb"
+        ],
+        "b": [
+          "Trackball",
+          "usb"
+        ],
+        "net": "USB_MOUSE",
+        "color": "#336b97",
+        "pts": [
+          [
+            1950,
+            973
+          ],
+          [
+            1900,
+            973
+          ],
+          [
+            1900,
+            1280
+          ],
+          [
+            2320,
+            1280
+          ],
+          [
+            2320,
+            1626
+          ],
+          [
+            2360,
+            1626
+          ]
+        ]
+      },
+      {
+        "a": [
+          "HDMI switch",
+          "status"
+        ],
+        "b": [
+          "Interface",
+          "status_in"
+        ],
+        "net": "HDMI_STATUS_5V",
+        "color": "#bc5d19",
+        "pts": [
+          [
+            1270,
+            880
+          ],
+          [
+            1270,
+            1010
+          ],
+          [
+            1850,
+            1010
+          ],
+          [
+            1850,
+            1340
+          ],
+          [
+            2240,
+            1340
+          ],
+          [
+            2240,
+            1775
+          ],
+          [
+            2212,
+            1775
+          ]
+        ]
+      },
+      {
+        "a": [
+          "HDMI switch",
+          "gnd"
+        ],
+        "b": [
+          "Interface",
+          "swgnd"
+        ],
+        "net": "HDMI_GND",
+        "color": "#445366",
+        "pts": [
+          [
+            1410,
+            880
+          ],
+          [
+            1410,
+            1025
+          ],
+          [
+            1830,
+            1025
+          ],
+          [
+            1830,
+            1360
+          ],
+          [
+            2250,
+            1360
+          ],
+          [
+            2250,
+            1820
+          ],
+          [
+            2212,
+            1820
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Silver button",
+          "NO"
+        ],
+        "b": [
+          "HDMI switch",
+          "toggle"
+        ],
+        "net": "SILVER_BUTTON_NO",
+        "color": "#b65078",
+        "pts": [
+          [
+            1690,
+            958.5
+          ],
+          [
+            1720,
+            958
+          ],
+          [
+            1720,
+            1020
+          ],
+          [
+            1530,
+            1020
+          ],
+          [
+            1530,
+            900
+          ],
+          [
+            1340,
+            900
+          ],
+          [
+            1340,
+            880
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Silver button",
+          "COM"
+        ],
+        "b": [
+          "HDMI switch",
+          "gnd"
+        ],
+        "net": "SILVER_BUTTON_COM",
+        "color": "#445366",
+        "pts": [
+          [
+            1690,
+            978.5
+          ],
+          [
+            1735,
+            978
+          ],
+          [
+            1735,
+            1035
+          ],
+          [
+            1515,
+            1035
+          ],
+          [
+            1515,
+            925
+          ],
+          [
+            1410,
+            925
+          ],
+          [
+            1410,
+            880
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Interface",
+          "led_out"
+        ],
+        "b": [
+          "Pixels",
+          "din"
+        ],
+        "net": "STRIP_led_out",
+        "color": "#18977d",
+        "pts": [
+          [
+            2212,
+            1630
+          ],
+          [
+            2300,
+            1630
+          ],
+          [
+            2300,
+            1890
+          ],
+          [
+            2358,
+            1890
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Interface",
+          "led5"
+        ],
+        "b": [
+          "Pixels",
+          "5"
+        ],
+        "net": "STRIP_led5",
+        "color": "#d43c38",
+        "pts": [
+          [
+            2212,
+            1675
+          ],
+          [
+            2312,
+            1675
+          ],
+          [
+            2312,
+            1865
+          ],
+          [
+            2358,
+            1865
+          ]
+        ]
+      },
+      {
+        "a": [
+          "Interface",
+          "ledgnd"
+        ],
+        "b": [
+          "Pixels",
+          "gnd"
+        ],
+        "net": "STRIP_ledgnd",
+        "color": "#445366",
+        "pts": [
+          [
+            2212,
+            1720
+          ],
+          [
+            2324,
+            1720
+          ],
+          [
+            2324,
+            1915
+          ],
+          [
+            2358,
+            1915
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "5"
+        ],
+        "b": [
+          "Interface",
+          "5"
+        ],
+        "net": "LED_POWER_5",
+        "color": "#d43c38",
+        "pts": [
+          [
+            1823,
+            2086
+          ],
+          [
+            2240,
+            2086
+          ],
+          [
+            2240,
+            1480
+          ],
+          [
+            2140,
+            1480
+          ],
+          [
+            2140,
+            1568
+          ]
+        ]
+      },
+      {
+        "a": [
+          "LED power",
+          "gnd"
+        ],
+        "b": [
+          "Interface",
+          "pgnd"
+        ],
+        "net": "LED_POWER_gnd",
+        "color": "#445366",
+        "pts": [
+          [
+            1823,
+            2130
+          ],
+          [
+            2260,
+            2130
+          ],
+          [
+            2260,
+            1480
+          ],
+          [
+            2180,
+            1480
+          ],
+          [
+            2180,
+            1568
+          ]
+        ]
+      }
+    ]
+  }
+]

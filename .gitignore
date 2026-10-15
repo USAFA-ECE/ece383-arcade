@@ -1,0 +1,4 @@
+/design/parts/
+/design/*.fz
+__pycache__/
+*.py[cod]

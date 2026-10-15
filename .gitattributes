@@ -1,0 +1,5 @@
+design/*.fzz binary
+design/design-data.json linguist-generated=true
+design/previews/*.svg linguist-generated=true
+design/previews/*.png linguist-generated=true
+design/assets/*.svg linguist-vendored=true

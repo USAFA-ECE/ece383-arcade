@@ -1,0 +1,6 @@
+01-arcade-system: PASS; 13 embedded part types, 130 instances, 600 reciprocal view links checked
+02-controls-and-ja: PASS; 8 embedded part types, 261 instances, 1280 reciprocal view links checked
+03-led-and-hdmi-interfaces: PASS; 13 embedded part types, 463 instances, 2208 reciprocal view links checked
+04-realistic-breadboard: PASS; 16 embedded part types, 604 instances, 2784 reciprocal view links checked
+
+Electrical and file checks passed. Native application export and hardware are not verified.
