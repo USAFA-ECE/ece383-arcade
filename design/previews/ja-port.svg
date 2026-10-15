@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="930" viewBox="0 0 1440 930" role="img" aria-labelledby="title desc">
+<title id="title">Nexys Video JA connector: arcade wiring</title>
+<desc id="desc">Front mating face with PCB below. Upper row left to right: 6, 5, 4, 3, 2, 1. Lower row: 12, 11, 10, 9, 8, 7. Player 1 latch, pulse, data use JA1, JA2, JA3; player 2 uses JA7, JA8, JA9. JA4 is LED data.</desc>
+<defs>
+ <linearGradient id="housing" x2="0" y2="1"><stop stop-color="#515c69"/><stop offset="1" stop-color="#202a34"/></linearGradient>
+ <linearGradient id="bezel" x2="0" y2="1"><stop stop-color="#d6dbe0"/><stop offset="1" stop-color="#87939f"/></linearGradient>
+</defs>
+<rect width="1440" height="930" rx="20" fill="#f5f7fa"/>
+
+<text x="56" y="65" font-family="DejaVu Sans,sans-serif" font-size="36" fill="#1b2b40" text-anchor="start" font-weight="700">JA  /  NEXYS VIDEO</text>
+<text x="56" y="104" font-family="DejaVu Sans,sans-serif" font-size="24" fill="#1b2b40" text-anchor="start" font-weight="400">Front / mating face • look into the board socket with the PCB below</text>
+<text x="56" y="140" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#53657a" text-anchor="start" font-weight="400">Orientation matches the supplied cabinet reference. Wire-side view is mirrored.</text>
+<text x="330" y="208" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#bc4141" text-anchor="middle" font-weight="700">VCC</text>
+<text x="486" y="208" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#4568bc" text-anchor="middle" font-weight="700">GND</text>
+<text x="876" y="208" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#445264" text-anchor="middle" font-weight="700">8 SIGNALS</text>
+<path d="M620 235 V224 H1132 V235" fill="none" stroke="#627386" stroke-width="3"/>
+<rect x="155" y="448" width="1128" height="20" fill="#08784f" stroke="#044a31" stroke-width="3"/>
+<rect x="267" y="254" width="924" height="194" rx="6" fill="url(#housing)" stroke="#18222e" stroke-width="4"/>
+<rect x="295" y="268" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="305" y="278" width="50" height="50" rx="2" fill="#bc4141"/>
+<rect x="317" y="290" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="379" y="310" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">6</text>
+<text x="330" y="247" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#bc4141" text-anchor="middle" font-weight="700">3.3 V</text>
+<rect x="451" y="268" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="461" y="278" width="50" height="50" rx="2" fill="#4568bc"/>
+<rect x="473" y="290" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="535" y="310" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">5</text>
+<text x="486" y="247" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#4568bc" text-anchor="middle" font-weight="700">GND</text>
+<rect x="607" y="268" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="617" y="278" width="50" height="50" rx="2" fill="#198467"/>
+<rect x="629" y="290" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="691" y="310" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">4</text>
+<text x="642" y="247" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#198467" text-anchor="middle" font-weight="700">LED DATA</text>
+<rect x="763" y="268" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="773" y="278" width="50" height="50" rx="2" fill="#2177b6"/>
+<rect x="785" y="290" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="847" y="310" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">3</text>
+<text x="798" y="247" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#2177b6" text-anchor="middle" font-weight="700">P1 DATA</text>
+<rect x="919" y="268" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="929" y="278" width="50" height="50" rx="2" fill="#2177b6"/>
+<rect x="941" y="290" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="1003" y="310" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">2</text>
+<text x="954" y="247" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#2177b6" text-anchor="middle" font-weight="700">P1 PULSE</text>
+<rect x="1075" y="268" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="1085" y="278" width="50" height="50" rx="2" fill="#2177b6"/>
+<rect x="1097" y="290" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="1159" y="310" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">1</text>
+<text x="1110" y="247" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#2177b6" text-anchor="middle" font-weight="700">P1 LATCH</text>
+<rect x="295" y="364" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="305" y="374" width="50" height="50" rx="2" fill="#bc4141"/>
+<rect x="317" y="386" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="379" y="406" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">12</text>
+<text x="330" y="509" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#bc4141" text-anchor="middle" font-weight="700">3.3 V / NC</text>
+<rect x="451" y="364" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="461" y="374" width="50" height="50" rx="2" fill="#4568bc"/>
+<rect x="473" y="386" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="535" y="406" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">11</text>
+<text x="486" y="509" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#4568bc" text-anchor="middle" font-weight="700">GND</text>
+<rect x="607" y="364" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="617" y="374" width="50" height="50" rx="2" fill="#6c7887"/>
+<rect x="629" y="386" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="691" y="406" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">10</text>
+<text x="642" y="509" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#6c7887" text-anchor="middle" font-weight="700">SPARE</text>
+<rect x="763" y="364" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="773" y="374" width="50" height="50" rx="2" fill="#8853aa"/>
+<rect x="785" y="386" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="847" y="406" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">9</text>
+<text x="798" y="509" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#8853aa" text-anchor="middle" font-weight="700">P2 DATA</text>
+<rect x="919" y="364" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="929" y="374" width="50" height="50" rx="2" fill="#8853aa"/>
+<rect x="941" y="386" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="1003" y="406" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">8</text>
+<text x="954" y="509" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#8853aa" text-anchor="middle" font-weight="700">P2 PULSE</text>
+<rect x="1075" y="364" width="70" height="70" rx="3" fill="url(#bezel)" stroke="#89939f" stroke-width="2"/>
+<rect x="1085" y="374" width="50" height="50" rx="2" fill="#8853aa"/>
+<rect x="1097" y="386" width="26" height="26" fill="#10171d" stroke="#d0b56b" stroke-width="3"/>
+<text x="1159" y="406" font-family="DejaVu Sans,sans-serif" font-size="21" fill="#ffffff" text-anchor="middle" font-weight="700">7</text>
+<text x="1110" y="509" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#8853aa" text-anchor="middle" font-weight="700">P2 LATCH</text>
+<text x="247" y="295" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#1b2b40" text-anchor="end" font-weight="700">Pin 6</text>
+<text x="1213" y="295" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#1b2b40" text-anchor="start" font-weight="700">Pin 1</text>
+<text x="247" y="407" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#1b2b40" text-anchor="end" font-weight="700">Pin 12</text>
+<text x="1213" y="407" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#1b2b40" text-anchor="start" font-weight="700">Pin 7</text>
+<text x="155" y="498" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#08784f" text-anchor="start" font-weight="700">PCB</text>
+<rect x="56" y="555" width="644" height="190" rx="12" fill="#ffffff" stroke="#d7dfe8" stroke-width="2"/>
+<text x="80" y="590" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#2177b6" text-anchor="start" font-weight="700">PLAYER 1  /  NES CONTROLLER</text>
+<text x="80" y="632" font-family="DejaVu Sans,sans-serif" font-size="24" fill="#1b2b40" text-anchor="start" font-weight="400">JA1  ·  Latch  →  Due D2</text>
+<text x="80" y="672" font-family="DejaVu Sans,sans-serif" font-size="24" fill="#1b2b40" text-anchor="start" font-weight="400">JA2  ·  Pulse / clock  →  Due D3</text>
+<text x="80" y="712" font-family="DejaVu Sans,sans-serif" font-size="24" fill="#1b2b40" text-anchor="start" font-weight="400">JA3  ·  Serial data  ←  Due D4</text>
+<rect x="740" y="555" width="644" height="190" rx="12" fill="#ffffff" stroke="#d7dfe8" stroke-width="2"/>
+<text x="764" y="590" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#8853aa" text-anchor="start" font-weight="700">PLAYER 2  /  NES CONTROLLER</text>
+<text x="764" y="632" font-family="DejaVu Sans,sans-serif" font-size="24" fill="#1b2b40" text-anchor="start" font-weight="400">JA7  ·  Latch  →  Due D5</text>
+<text x="764" y="672" font-family="DejaVu Sans,sans-serif" font-size="24" fill="#1b2b40" text-anchor="start" font-weight="400">JA8  ·  Pulse / clock  →  Due D6</text>
+<text x="764" y="712" font-family="DejaVu Sans,sans-serif" font-size="24" fill="#1b2b40" text-anchor="start" font-weight="400">JA9  ·  Serial data  ←  Due D7</text>
+<text x="56" y="791" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#198467" text-anchor="start" font-weight="700">JA4 → U1 A1: FPGA 3.3 V → LED 5 V data. JA10: spare.</text>
+<text x="56" y="831" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#1b2b40" text-anchor="start" font-weight="400">JA5 / JA11: common GND. JA6: 3.3 V for R6 / R7 (10 kΩ NES data pull-ups).</text>
+<text x="56" y="871" font-family="DejaVu Sans,sans-serif" font-size="22" fill="#1b2b40" text-anchor="start" font-weight="400">JA12: leave unconnected. Never apply 5 V to JA or join FPGA and Due 3.3 V rails.</text>
+<text x="56" y="907" font-family="DejaVu Sans,sans-serif" font-size="20" fill="#53657a" text-anchor="start" font-weight="400">Latch / pulse: FPGA → Due. Serial data: Due → FPGA, LOW or Hi-Z. Not a mechanical drawing.</text>
+</svg>

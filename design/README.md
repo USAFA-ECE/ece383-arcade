@@ -45,6 +45,10 @@ Pi USB host -> Due **Native USB**, for keyboard HID and Due power. Programming U
 
 Controller GPIO assignments match the repository; JA positions follow the supplied cabinet screenshot. No level translation is required between Due and FPGA 3.3 V GPIO.
 
+![JA socket front / mating face with pin numbers and arcade functions](previews/ja-port.png)
+
+[Scalable connector redraw](previews/ja-port.svg). Look into the board socket with the PCB below: pin 6 is upper left, pin 1 upper right, pin 12 lower left and pin 7 lower right. The wire-side view is mirrored.
+
 | JA physical pin | FPGA package pin | Function | Due / destination | Direction at FPGA |
 | --- | --- | --- | --- | --- |
 | 1 | AB22 | Player 1 latch | D2 | Output |
@@ -152,7 +156,7 @@ The [3 inch RetroArcade.us trackball](https://www.amazon.com/dp/B0711TKGFV) stay
 
 ## Firmware and compatibility limits
 
-Open `reference/arcade_due_manual_switch/arcade_due_manual_switch.ino` as an Arduino Due Native USB project. It is a local revised draft; the GitHub repository was not changed. It contains the corrected pin order, internal button pull-ups, manual-switch status routing and open-drain NES serialization. `reference/upstream/` preserves the reviewed files.
+Open `reference/arcade_due_manual_switch/arcade_due_manual_switch.ino` as an Arduino Due Native USB project. It is a hardware-unverified implementation draft; the original controller example is preserved. It contains the corrected pin order, internal button pull-ups, manual-switch status routing and open-drain NES serialization. `reference/upstream/` preserves the reviewed controller pin baseline.
 
 The draft preserves upstream **RISING** latch and clock interrupts. That differs from the earlier design's falling-edge note. Raw serial order is A, B, Select, Start, Up, Down, Left, Right, LOW pressed. Latch presents A; rising clock callbacks advance; data stays released after eight bits. Verify the target bitstream's edge convention and service-time margin with a scope. Arduino interrupt handlers plus USB service are not a guarantee of original NES-speed response.
 
